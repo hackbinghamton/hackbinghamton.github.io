@@ -15,12 +15,13 @@ button,
 input,
 select,
 textarea {
-    color: #222;
+	color: #222;
 }
 
 html {
-    font-size: 1em;
-    line-height: 1.4;
+	font-family: "proxima-nova",sans-serif;
+	font-size: 1em;
+	line-height: 1.4;
 }
 
 /*
@@ -30,13 +31,13 @@ html {
  */
 
 ::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
+	background: #b3d4fc;
+	text-shadow: none;
 }
 
 ::selection {
-    background: #b3d4fc;
-    text-shadow: none;
+	background: #b3d4fc;
+	text-shadow: none;
 }
 
 /*
@@ -44,12 +45,12 @@ html {
  */
 
 hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
+	display: block;
+	height: 1px;
+	border: 0;
+	border-top: 1px solid #ccc;
+	margin: 1em 0;
+	padding: 0;
 }
 
 /*
@@ -61,7 +62,7 @@ audio,
 canvas,
 img,
 video {
-    vertical-align: middle;
+	vertical-align: middle;
 }
 
 /*
@@ -69,9 +70,9 @@ video {
  */
 
 fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
+	border: 0;
+	margin: 0;
+	padding: 0;
 }
 
 /*
@@ -79,26 +80,85 @@ fieldset {
  */
 
 textarea {
-    resize: vertical;
+	resize: vertical;
 }
 
 /* ==========================================================================
    HackBU
    ========================================================================== */
 
+@border-color: #2a3134;
+@green: #006a4e;
 
+body {
+	background: url(../img/background.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
 
+a {
+	color: #FFF;
+	text-decoration: none;
+}
 
+.container {
+	margin: 5em auto 2em;
+	max-width: 30em;
+}
 
+.header-logo {
+	border-bottom: 1px solid @border-color;
+	color: #FFF;
+	font-size: 4.1em;
+	font-weight: 700;
+	margin: 0;
+	padding-bottom: 0.3em;
+	text-align: center;
+	text-shadow: 0 7px 0 rgba(0,0,0,.09);
+}
 
+.bu {
+	color: @green;
+}
 
+.post {
+	background: rgba(0, 0, 0, 0.03);
+	border-bottom: 1px solid @border-color;
+	color: #FFF;
+	padding: 1.563em 2.6em;
+	text-align: center;
+}
 
+.post-date {
+	color: #727272;
+	display: block;
+	font-size: 0.938em;
+	margin-bottom: 1em;
+}
 
+.post-title {
+	font-size: 2.250em;
+	margin: 0 0 0.4em 0;
+	text-shadow: 0 3px 0 rgba(0, 0, 0, .23);
+}
 
+.post-description {
+	color: #dadada;
+	font-size: 1.406em;
+	margin: 0 0 1.409em 0;
+}
 
-
-
-
+.post-link {
+	background: rgba(0, 106, 78, 0.3);
+	display: inline-block;
+	padding: 1em 2.2em;
+	font-size: 0.9em;
+	font-weight: 600;
+	text-decoration: none;
+	text-transform: uppercase;
+}
 
 
 
@@ -111,18 +171,18 @@ textarea {
  */
 
 .ir {
-    background-color: transparent;
-    border: 0;
-    overflow: hidden;
-    /* IE 6/7 fallback */
-    *text-indent: -9999px;
+	background-color: transparent;
+	border: 0;
+	overflow: hidden;
+	/* IE 6/7 fallback */
+	*text-indent: -9999px;
 }
 
 .ir:before {
-    content: "";
-    display: block;
-    width: 0;
-    height: 150%;
+	content: "";
+	display: block;
+	width: 0;
+	height: 150%;
 }
 
 /*
@@ -130,8 +190,8 @@ textarea {
  */
 
 .hidden {
-    display: none !important;
-    visibility: hidden;
+	display: none !important;
+	visibility: hidden;
 }
 
 /*
@@ -139,14 +199,14 @@ textarea {
  */
 
 .visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
 }
 
 /*
@@ -156,12 +216,12 @@ textarea {
 
 .visuallyhidden.focusable:active,
 .visuallyhidden.focusable:focus {
-    clip: auto;
-    height: auto;
-    margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
+	clip: auto;
+	height: auto;
+	margin: 0;
+	overflow: visible;
+	position: static;
+	width: auto;
 }
 
 /*
@@ -169,7 +229,7 @@ textarea {
  */
 
 .invisible {
-    visibility: hidden;
+	visibility: hidden;
 }
 
 /*
@@ -186,12 +246,12 @@ textarea {
 
 .clearfix:before,
 .clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+	content: " "; /* 1 */
+	display: table; /* 2 */
 }
 
 .clearfix:after {
-    clear: both;
+	clear: both;
 }
 
 /*
@@ -200,5 +260,5 @@ textarea {
  */
 
 .clearfix {
-    *zoom: 1;
+	*zoom: 1;
 }
