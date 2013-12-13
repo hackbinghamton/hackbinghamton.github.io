@@ -1,4 +1,3 @@
-HackBU
-======
+# HackBU
 
-The hackathon at Binghamton University.
+A student-run organization at Binghamton University promoting technology and entrepreneurship.
