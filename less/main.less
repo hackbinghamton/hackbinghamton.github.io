@@ -95,22 +95,98 @@ html {
 }
 
 body {
+<<<<<<< HEAD
+<<<<<<< HEAD
 	background: url(../img/background.jpg) no-repeat center center fixed; 
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
+=======
+	background-color: #f5f5f5;
+	// background: #edeff0;
+>>>>>>> 62f806c... add lots of content to the index page
 }
 
 a {
 	color: #FFF;
 	text-decoration: none;
+=======
+	background-color: #fafafa;
 }
 
+a {
+	color: #54795b;
+}
+
+form {
+	background: #fff;
+	border-radius: 3px;
+	border: 1px solid #d7d7d7;
+	margin-bottom: 1em;
+	margin-top: 1em;
+	padding: 0.3em 0.2em;
+}
+
+input:not([type=submit]):not([type=file]) {
+	border: 1px solid #fff;
+	border-radius: 3px;
+	float: left;
+	margin-right: 1%;
+	padding: 0.5em;
+	width: 79%;
+
+	&:focus {
+		outline: 0;
+	}
+}
+
+input[type=submit] {
+	-webkit-font-smoothing: antialiased;
+	background: #159170;
+	border: none;
+	border-radius: 3px;
+	box-shadow: 0 4px 0 0 #095E47;
+	color: #fff;
+	float: left;
+	font-weight: 600;
+	padding: 0.5em 1em;
+	width: 20%;
+}
+
+table {
+	background: #fff;
+	border-radius: @border-radius;
+	margin-bottom: 1em;
+	margin-top: 1em;
+}
+
+th {
+	text-align: left;
+}
+
+tr:nth-child(even) {}
+
+th, td {
+	border: 1px solid #eee;
+	padding: 0.5em 1em;
+
+	&[colspan] {
+		text-align: center;
+		font-weight: 600;
+	}
+>>>>>>> d333f44... redesigned the index page and updated the content
+}
+
+<<<<<<< HEAD
 .container {
 	margin: 5em auto 2em;
 	max-width: 30em;
 	opacity: 0;
+=======
+.table-number {
+	text-align: center;
+>>>>>>> 69346ab... added more content and some layout changes
 }
 
 .header-logo {
@@ -134,8 +210,28 @@ a {
 
 }
 
+<<<<<<< HEAD
 .bu {
 	color: @green;
+=======
+/*===============*/
+/*=== Sidebar ===*/
+/*===============*/
+
+@sidebar-link-color: #f0f0f0;
+@sidebar-left-padding: 1.3em;
+@sidebar-width: 18.750em;
+
+.sidebar {
+	background: url('../img/sidebar-bg.png') no-repeat center center;
+	background-size: cover;
+	box-shadow:inset -5px 0 0 0 rgba(0, 0, 0, 0.1);
+	bottom: 0;
+	left: 0;
+	position: fixed;
+	top: 0;
+	width: @sidebar-width;
+>>>>>>> d333f44... redesigned the index page and updated the content
 }
 
 .fb-like {
@@ -149,11 +245,43 @@ a {
 	padding: 0.7em 1em;
 	text-align: center;
 
+<<<<<<< HEAD
 	.fb-like {
 		margin-left: 0.6em;
 	}
 }
 
+=======
+.sidebar-navigation {
+	list-style: none;
+	margin: 2em 0;
+	padding: 0;
+	
+	a {
+		color: #7a858f;
+		display: block;
+		font-size: 1.125em;
+		font-weight: 600;
+		padding: 0.3em @sidebar-left-padding;
+		transition: color 0.1s ease-in;
+		text-decoration: none;
+
+		&:hover {
+			color: #a2b0bf;
+		}
+	}
+}
+
+.sidebar-navigation-active {
+	a {
+		color: @sidebar-link-color;
+
+		&:hover {
+			color: @sidebar-link-color;
+		}
+	}
+}
+>>>>>>> d333f44... redesigned the index page and updated the content
 
 .page-description {
 	background: rgba(0, 0, 0, 0.02);
@@ -165,6 +293,7 @@ a {
 }
 
 
+<<<<<<< HEAD
 
 .post {
 	background: rgba(0, 0, 0, 0.03);
@@ -173,6 +302,11 @@ a {
 	padding: 1.563em 2.6em;
 	text-align: center;
 	transition: background 0.2s ease;
+=======
+/*===============*/
+/*=== Content ===*/
+/*===============*/
+>>>>>>> d333f44... redesigned the index page and updated the content
 
 	&:hover {
 		background: rgba(0, 0, 0, 0.1);
@@ -180,6 +314,7 @@ a {
 	}
 }
 
+<<<<<<< HEAD
 .post-date {
 	color: #727272;
 	display: block;
@@ -191,14 +326,39 @@ a {
 	font-size: 2.250em;
 	margin: 0 0 0.4em 0;
 	text-shadow: 0 3px 0 rgba(0, 0, 0, 0.23);
+=======
+.site-announcement {
+	background-color: #fff;
+	border-bottom: 1px solid #b9b9b9;
+	box-shadow: 0 2px 0 rgba(0, 0, 0, 0.03);
+	text-align: center;
+	padding: 0.9em;
 }
 
+.page-content {
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 47.5em;
+	padding: 2.5em;
+<<<<<<< HEAD
+>>>>>>> 62f806c... add lots of content to the index page
+}
+
+<<<<<<< HEAD
 .post-description {
 	color: #dadada;
 	font-size: 1.406em;
 	margin: 0 0 1.409em 0;
+=======
+
+	table {
+		margin-left: -2.5em;
+		width: ~"calc(100% + (2 * 2.5em))";
+	}
+>>>>>>> 69346ab... added more content and some layout changes
 }
 
+<<<<<<< HEAD
 .post-link {
 	background: rgba(0, 106, 78, 0.6);
 	display: inline-block;
@@ -213,6 +373,30 @@ a {
 		background: rgba(0, 106, 78, 0.8);
 		transition: background 0.2s ease;
 	}
+=======
+=======
+.article {
+	border-bottom: 1px solid #dedede;
+	padding-bottom: 0.2em;
+
+	&:last-child {
+		border-bottom: none;
+	}
+}
+
+.article-social {
+	padding: 1em;
+}
+
+.article-introduction {
+	font-size: 1.2em;
+	padding-bottom: 0.5em;
+}
+
+>>>>>>> d333f44... redesigned the index page and updated the content
+.fa {
+	margin-right: 0.3em;
+>>>>>>> 568f95c... improved copy on workshops page
 }
 
 
