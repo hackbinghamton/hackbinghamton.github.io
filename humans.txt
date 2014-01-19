@@ -15,9 +15,9 @@ Created by:
 
 Special thanks to:
 * Jonathan Heisler '13 - provided great photos for the website
-* HackMcgill (http://hackmcgill.com/) - website structure and content inspiration
+* HackMcgill - website structure and content inspiration
 
-And created with:
+Created with:
 * HTML5 Boilerplate
 * Jekyll
 * git
