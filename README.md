@@ -26,6 +26,12 @@ Making a change to the website? Develop on a new branch and submit a pull reques
 
 Another developer will review the pull request, leave comments, and decide whether or not to merge.
 
+## License
+
+The contents of this repository are [released under the MIT License](http://hackbu.org/LICENSE). 
+
+Contact [hello@hackbu.org](mailto:hello@hackbu.org) with questions.
+
 ## Thanks to...
 
 We'd like to thank the people and organizations below for help with HackBU.
