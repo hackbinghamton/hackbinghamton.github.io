@@ -110,13 +110,22 @@ a {
 
 table {
 	background: #fff;
-	border-radius: 5px;
+	display: block;
 	margin-bottom: 1em;
 	margin-top: 1em;
+	overflow-x: auto;
+}
+
+tbody, thead {
+	width: auto;
 }
 
 th {
 	text-align: left;
+}
+
+.th-description {
+	min-width: 13em;
 }
 
 tr:nth-child(even) {}
@@ -159,6 +168,8 @@ th, td {
 
 .container {
 	margin-left: @sidebar-width;
+	padding-left: 1em;
+	padding-right: 1em;
 
 	a {
 		font-weight: 600;
@@ -406,8 +417,19 @@ th, td {
 }
 
 @media only screen and (max-width : 690px) {
+	.container {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
 	.page-content {
-		padding: 0.5em 1.5em 1em;
+		@side-padding: 1.5em;
+		padding: 0.5em @side-padding 1em;
+
+		table {
+			margin-left: -@side-padding;
+			width: calc(~"100% + (2 * "@side-padding~")");
+		}
 	}
 
 	.header-navigation li {
