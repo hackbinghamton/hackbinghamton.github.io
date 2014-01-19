@@ -43,7 +43,7 @@
 		{% endif %}
 		<meta property="og:image" content="{{ og_image }}">
 
-		<meta property="og:url" content="http://{{ site.host }}{{ page.url }}">
+		<meta property="og:url" content="{{ site.root }}{{ page.url | replace: 'index.html', '' }}">
 
 		{% include head.html %}
 	</head>
