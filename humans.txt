@@ -14,7 +14,7 @@ Created by:
 * Jules Forrest '14
 
 Special thanks to:
-* Jonathan Heisler '13 - gave us photos for the website
+* Jonathan Heisler '13 - provided great photos for the website
 * HackMcgill (http://hackmcgill.com/) - website structure and content inspiration
 
 And created with:
