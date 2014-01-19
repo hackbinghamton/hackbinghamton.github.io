@@ -6,3 +6,21 @@
 	js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=737007022995217";
 	fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
+
+<header class="header clearfix">
+	<h1 class="header-hackbu hackbu">
+		<a href="/">Hack<span class="hackbu-green">BU</span></a>
+	</h1>
+
+	<ul class="header-navigation navigation">
+		<li {% if page.url == '/workshops/index.html' %}class="navigation-active"{% endif %}>
+			<a href="/workshops/">Workshops</a>
+		</li>
+		<li {% if page.url == '/hackathons/index.html' %}class="navigation-active"{% endif %}>
+			<a href="/hackathons/">Hackathons</a>
+		</li>
+		<li {% if page.url == '/resources/index.html' %}class="navigation-active"{% endif %}>
+			<a href="/resources/">Resources</a>
+		</li>
+	</ul>
+</header>
