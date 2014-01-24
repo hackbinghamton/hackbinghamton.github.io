@@ -10,7 +10,7 @@ Created by:
 * Yuval Shafir '16
 * Alex Terela '16
 * Peter Liu '15
-* Itai Ferber '14
+* Itai Ferber '16
 * Jules Forrest '14
 
 Special thanks to:
