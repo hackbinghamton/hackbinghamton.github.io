@@ -9,3 +9,4 @@ root: 'http://hackbu.org'
 safe: true
 lsi: false
 pygments: true
+markdown: redcarpet
