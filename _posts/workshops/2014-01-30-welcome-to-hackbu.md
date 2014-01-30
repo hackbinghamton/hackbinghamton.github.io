@@ -12,139 +12,145 @@ date: '2014-01-40T20:00:00-05:00'
 permalink: /workshops/2014/spring/welcome-to-hackbu/
 ---
 
-# Parts of the Web
+# Welcome to HackBU
 
-## IP Address
+## Parts of the web
 
-Is an address/phone number for your computer. Consists of four sets of octets (256 numbers, from 0-255). It's the way that your computer knows what computer to ask for information from.
-Since the internet and the number of devices are growing, we need a new version of IP address, now IPv6 (vs current IPv4).
+Let’s kick off HackBU by diving into short lesson about the internet and how it works.
 
-	2001:cdba:0000:0000:0000:0000:3257:9652
+### IP address
 
-	IPv4: 4,294,967,296 different IP addresses
+An **IP address** is a unique address for your computer. It consists of four sets of octets (256 numbers, from 0-255). It’s how your computer knows where to connect to when loading a website.
 
-	IPv6: 340,282,366,920,938,463,463,374,607,431,768,211,456 IP addresses
+Since the internet and the number of devices are growing, a new version of IP address was created. There are 2<sup>128</sup> possible IPv6 addresses compared to 2<sup>32</sup> IPv4 addresses.
 
-## Domain and DNS
+### Domain and DNS
 
-If your website is like an address, the **DNS** (*Domain Name Server*) is like a phonebook for the internet. You won't remember an IP address (like how most of us don't remember our own phone numbers), but instead use a domain name like *google.com*. They are just a bunch of servers that keep record of domain names and IP address all over the internet. For example, if you want to visit Facebook, you could visit `223.172.190.38` or you could visit its domain name at *facebook.com*. It will talk to the computer at `223.172.190.38` and ask for that web page.
+Think of an IP address as a phone number and the **DNS** *(domain name server)* as a phone book for the internet. You don’t need to memorize IP addresses (just like phone numbers) since the DNS can look it up when you type an address like *google.com*. 
 
-## Web Server
+These domain name servers are are computers dedicated to keeping records of domain names and IP addresses on the internet. For example, you could visit Google at the IP address [`74.125.224.72`](http://74.125.224.72/) or the domain name [google.com](http://google.com/). Either way, your browser will talk to the computer at [`74.125.224.72`](http://74.125.224.72/) and ask for the web page.
 
-Web servers are computers that can be accessed through the internet. Photo of what servers look like. They are a computer without a monitor or a keyboard or mouse, and it's about the size of a laptop. It communicates through the internet. 
+### Web server
 
-Process! When you go to a website, Google.com
+**Web servers** are computers that can be accessed through the internet. They are typically computers without monitors, keyboards, or mice and are controlled remotely.
 
-1. Browser sends out a request for the web page
-2. Web server receives request and puts together the right parts
-3. Web server sends back a web page
+With the right software, any computer can be used as a web server.
 
-Like ordering take-out food.
+### How it all fits together
 
-Almost any computer can be used as a web server, as long as you have the right software installed that will listen in for step 2. Typical web server is different, as mentioned above.
+When you visit Google, a few things happen:
+
+1. Your web browser sends out a request for the web page at the IP address that [google.com](http://google.com/) maps to. This mapping is done with the help of DNS. 
+2. A Google web server (they have thousands) receives the requests and processes it.
+3. The web server sends back the requested resources.
+4. The web browser processes the data it receives and puts the page together.
+
+It’s like ordering take-out food.
 
 
-# Technologies We Will Be Learning
+## Languages we’ll be covering
 
-## HTML
+The weekly HackBU workshops will cover the basics and progress to advanced topics. Here’s a quick overview of these topics.
 
-HTML is the language we use when we want to add structure to our website. 
-When you visit a website, there are clear distinctions between parts of the website, like headlines and paragraphs. Each item has its own HTML tag, which look like this.
+### HTML
 
-	<h1>This is a header.</h1>
+HTML is the language we use to add structure to our website.
+
+Websites typically contain elements such as headlines, paragraphs, links, images, lists. Each of these elements have their own HTML tag. 
+
+	<h1>This is a large header.</h1>
 	<p>This is a paragraph.</p>
 
-<h1>This is a header.</h1>
-<p>This is a paragraph.</p>
+Some elements, such as images, don't have closing tags.
 
-HTML lets you describe things like paragraphs, audio, video, lists, articles, images, emphasis, button. 
+    <img src="http://placekitten.com/g/200/300">
 
-## CSS
+We'll dig deeper in the following workshops.
 
-HTML tells the browser what the structure and different parts of the page are. CSS is what makes websites pretty and adds style to them. You can control the color, font styles, size, etc.
+### CSS
 
-If you wanted to change the font and color of a paragraph:
+If HTML is all about markup, CSS is all about style. You can control the color, font styles, size, etc.
+
+For example, the following CSS can change the font and color of a paragraph:
   
 	p {
-		font-family: 'Helvetica'; 
-		background-color: red;
+        background-color: red;
+        font-family: Helvetica, Arial, sans-serif;
 	}
 
-## Javascript
+### JavaScript
 
-Javascript and a programming language that makes websites interactive. It is responsible for things like Google's autocomplete and search suggestion feature, and is the reason you don't necessarily have to refresh your browser when information gets updated on your Twitter or Facebook. 
+JavaScript is a programming language that makes websites interactive. It powers features like Google’s search suggestions and is the reason you don’t necessarily have to refresh your browser when new posts appear on Twitter or Facebook. 
 
-It is also used for animation and can even be used to built games, like Google's [Chrome Racer](http://g.co/racer/).
+It is also used to animate web pages and can be used to build games such as Google’s [Chrome Racer](http://www.chrome.com/racer).
 
-One of the very few programming languages that work in your browser. Once a toy, but now very serious. Used for node.js for server side, and even for full-stack (MeteorJS).
+JavaScript is incredibly powerful and one of the very few programming languages that work in the browser. (HTML is a markup language and CSS is a stylesheet language.) It can also run on a server with new technologies such as [node.js](http://nodejs.org/) and [Meteor](https://www.meteor.com/).
 
-## Ruby
+### Ruby
 
-Ruby was created in 1995 in Japan by Yukihiro Matsumoto (MATZ!), who felt that programming languages were too focused on machines and not very human friendly. For example, C.
+Ruby was created in 1995 in Japan by Yukihiro Matsumoto *(MATZ!)*. He believed programming languages, such as C, were too focused on machines and not human friendly.
 
-Let's say you were Santa Claus and wanted to say "ho" three.
+Let’s say you were Santa Claus and wanted to say "ho" three.
 
-In many programming languages, you'd have to do this:
+In many programming languages, you’d write something like this:
 
 	for ($i = 0; $i < 3; $i++) {
 		echo "ho";
 	}
 
-In Ruby!
+In Ruby, you do this:
 
 	3.times do
 		print "ho";
 	end
 
-What is great about Ruby is that even if you weren't a programmer, you could easily read this and tell me what it does.
+Even if you aren’t a programmer, you can easily read and understand the Ruby code.
 
-Ultimately, the language became very popular with Ruby on Rails in 2005, a framework that made it easier to create web applications. 
+### Rails
 
-Twitter and Hulu both used Ruby on Rails, although Twitter had issues with scaling (because it's Twitter), and switched over to Java.
+[Ruby on Rails](http://rubyonrails.org/), a Ruby framework, makes it easier to create web applications. It was created in 2005 and helped popularize Ruby.
 
-## Rails
-
-Awesome framework for building web applications. Web applications are different from web sites. Web sites contain static and unchanging content, whereas as web applications allow you to interact directly with the data. Web applications let you do things like buy stuff, search, upload pictures, blog, etc. Rails makes it easy.
+Web applications, unlike basic (static) websites, are more powerful. They often let users create accounts, upload photos, make purchases, etc. Rails makes this easy.
 
 
-# Concepts
+## Concepts
 
-## Open Source
+Here are some concept’s we’ll touch on throughout the semester.
 
-One of the best parts of being a developer. It is the practice of sharing how a computer program was made and allowing anyone to customize the program as they see fit. For example, Ruby on Rails is open source. So is mostly everything on github. You have a version of the program as well as the source code, and you can fix it if you find a problem.
+### Open Source
 
-For example, Photoshop is a closed-source project, because it isn't something you can tinker with, or make changes to, or add changes to.
+It is the practice of sharing how a computer program was made and allowing anyone to customize the program as they see fit. For example, Ruby on Rails is open source.
 
-However, WordPress and Mozilla are (open source and not-for-profit). They rely on a community of people who work on software out of the good of their hearts and the desire to contribute to a meaningful product.
+Photoshop is an example of a closed-source project. You can’t see the source code that powers the program.
 
-GitHub is a huge platform that combines open source and social networking. Developers put source code and other developers in the community copy it (fork it), make changes, and submit them to the original creator to see if they want to use those changes. 
+WordPress and Mozilla, on the other hand, are two open source projects. They rely on a community of programmers with a desire to contribute to a meaningful product.
 
-Perhaps the biggest example of open source technology we will be using in this class is using the Ruby on Rails framework to build our web applications.
+[GitHub](https://github.com/) is a large platform that combines open source and social networking. Developers can publicaly share source code, allowing contributors to view it, copy it (known as forking), make changes, and submit them to the original creator. 
 
-## Frontend/Backend
+[HackBU](https://github.com/HackBinghamton/HackBU) is an example of an open source project.
 
-<img src="http://4b93n32qwvjj3ddn5w3yhffoas6.wpengine.netdna-cdn.com/wp-content/uploads/2012/08/term-frontendvsbackend.jpeg">
+### Front end vs. back end
 
-Frontend is everything you see, which includes HTML/CSS/JavaScript. The backend is what makes a web application happen. A typical setup is an application, a web server, and a database. For example, when you are a booking a flight, you need to check prices, book itineraries, and charge credit cards. All that happens on the backend. A web server sends a note to the application that you want to see all the flight to Chicago. The application looks up the flights in the DB and puts together a web page that lists them. Sends that web page through the server.
+Dynamic websites can be broken into two parts: the front end and back end.
 
-Database stores your info. Could be MySQL, MongoDB, PostgreSQL. Server side languages could be Python, Ruby, PHP, or interestingly enough now, Javascript.
+The front end is everything you can see. This includes HTML, CSS, and JavaScript. 
 
-This is not very different from client-side and server-side. Just a difference in semantics. Front-end vs back-end describe WHAT the action is while server-side vs client-side describe WHERE the action is. 
+The back end does the heavy lifting. This typically includes a server-side language such as Python, Ruby, or PHP and a database management systems such as MySQL, MongoDB, or PostgreSQL.
 
-## Responsive Design
+### Responsive design
 
-Designing a web page to be easily viewed on multiple screen sizes. Relies on CSS3 media queries, which basically means that the web browser knows how big the screen is and will adjust accordingly. For examples, instead of seeing three columns on your screen, your phone will align them vertically for viewability.
+Responsive websites adapt to the width of the browser. They look great on *any* device with *any* width. There are three components to a responsive website: a fluid layout, flexible images and media, and media queries.
 
-Foundation and Bootstrap are two frameworks that are responsive. Really hard to create a responsive framework! Also open source.
+* **Fluid layout** - Fluid layouts shrink and expand accordingly as you resize the broswer. This is because fluid layouts use percentages instead of pixels for width values
+* **Flexible images and media** - Images and media should resize to fit in the layout.
+* **Media queries** - A (relatively new) feature in CSS that lets you change the page’s style depending on width of the browser.
 
-## Full Stack
+The [HackBU website](http://hackbu.org/) is responsive. Take a look at the website on your phone and tablet!
 
-Technologies need to create your web product. For example, if someone asks you what your stack is, they want to know what you are using on the frontend or client-side and what you are using on the backend or server-side.
+## Goals for the Semester
 
+We will hit the ground running by helping you build a personal website with your resume and portfolio in the first few workshops.
 
-# Goals for the Semester
+You’ll then build a a microblogging platform *(like Twitter!)* once we dive into Ruby and Ruby on Rails.
 
-- A lot people have been asking me if this is something you will be able to put on your resume. Yes, we have been working very hard to ensure that you will have a certain level of proficiency to put these skills on your resume.
-- Speaking of resumes, we will hit the ground running by working along with you to help you build your own personal landing page with your resume and portfolio. We have had amazing support and one of our partners will actually be providing us free web hosting, meaning you will actually have something on the web.
-- You will build your own version of Twitter, or simply, a microblogging platform. You can easily shift the application to your own needs, for example, if you wanted to create the engine for your own blog.
-- We want you to gain the basic skills to continue learning and to want to and to be able to be creative and build things.
+We want you to gain the basic skills to continue learning and to bring your ideas to life.
