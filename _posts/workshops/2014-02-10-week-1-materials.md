@@ -13,8 +13,141 @@ week: 1
 permalink: /workshops/2014/spring/week-1-materials/
 ---
 
-# Introduction to HTML
-<!-- Remind Peter to put this content here. It's somewhere on his computer. -->
+# Housecleaning
+- Create a folder in your computer called HackBU. This is where all your work will go so it will be good to be organized.
+- Install a text editor. Sublime Text is a good place to start for beginners.
+- If you don't already have it, install Google Chrome to use as a web browser.
+(Assigned readings about directories and articles that encourage people to learn how to code.)
+
+# Week 1 Overview
+- Introduction to HTML and CSS
+- Creating text and lists with HTML
+- Styling the color and styles with CSS.
+
+(We will be learning HTML and CSS concurrently, because no one wants to look at a wall of ugly text with no way to style it.)
+
+## HTML
+### Creating Your First HTML File
+HTML files are simply text files that a web browser can understand and can display it in the way that you specify. Let's create our first HTML file.
+
+Exercise: Open up a text editor and type in:
+
+    <h1>Hello World!</h1>
+    <p>This is my first HTML file!</p>
+
+And save the file as helloworld.html. Then open it up in a web browser, and you have created your first HTML file!
+
+### Tags
+HTML stands for Hyper-text Markup Language, and defines the structure of the page. 
+
+HTML is comprised of tags. Every element is enclosed in a tag like so.
+
+    <h1>This is a level 1 header tag.</h1>
+    <p>This is a p tag, or a paragraph tag.</p>
+
+Tags are comprised of opening tags and closing tags, with the content going in between. The name of the tag is called an HTML element, or just an element.
+    
+    <openingtag>Content</closingtag>
+
+In the example we created, we used an h1 tag and a p tag. h1 represents a Level 1 header, which is primarily used for titles or headlines. p stands for paragraph, which is used for body text. Most of learning HTML and CSS is knowing what elements exist and when you should use them.
+
+## Attributes
+Tags also have attributes which tell us more about how the content is displayed and perhaps its relationship to other elements. Adding attributes to HTML elements can let us set how large we want them to be or what color we want them to be.
+
+    <h1 font-size="36px">This header will be 36px. That's pretty big.</h1>
+    <p color="red">This is a red sentence, because I'm different.</p>
+
+Attributes are specified in the start or opening tag. The attribute follow the format:
+
+    attribute-name="attribute-content"
+
+If you think about it, HTML is essentially technology we use all the time: a word processor. In a word processor, we choose how we want to format different parts of our word document through the settings. In HTML, we do this through text instead of selecting options from a menu.
+
+However, you can easily see that you don't want to type out how each element of the page looks like for each element. It can get really tedious and unmaintainable for larger webpages. That's where CSS comes in. It provides a set of rules for how to style elements for an entire webpage, so you don't have to individually set it for every element. If you want the whole page to use Helvetica (good choice) or for all the headers to be blue, then just simply add rules for that.
+
+We will talk about CSS later, but just remember that you use it to style a webpage.
+
+### Semantic VS Structural
+There is semantic markup and structural markup. HTML5 tries to focus more on semantic markup, which in Lehman's terms, provides more meaningful definitions for elements. For example, for sections of a page, nav, article, section, header, footer, are all more descriptive than divs, p's, h1, etc. 
+
+(Much like iOS, Android, Windows, Mac OS, etc. have versions, HTML has versions as well. HTML5 has the latest web standards implemented, and some elements may not work in HTML5.)
+
+### Block VS Inline Elements, and Nesting Elements
+HTML elements can be nested; this just means that you can put an HTML element within another HTML element. HTML elements are also defined by one of two types: block level elements and inline elements. Adjacent block elements, like headers, paragraphs, and lists, begin on new lines, while adjacent inline elements remain on the same line. Here is an example to show you nesting HTML elements and the difference between block and inline elements.
+
+In your helloworld.html file, type:
+
+    <body>
+      <hl>I am on a new line.</h1>
+      <p>I am also on another line.<p>
+      <p>While this paragraph is in the same line, <strong>these words remain within the paragraph.</strong></p>
+    </body>
+
+HTML elements can be nested within each other, as you will see more clearly in the future when we talk about things like lists and tables, and when we talk about page layouts. In this example, every element is include within the HTML body element, which really defines everything you should be able to see in your browser. Very important.
+
+The majority of HTML is simply knowing when to use a certain element to create structure and hierarchy in a page. For example, you don't want to write an blog post using a header. Because that would just look ridiculous. It is also really just familiarizing yourself with the important tags you need to learn. You don't have to do rote memorization, but understand what tags are important to know and to really just know that they are there if you do need to use them.
+
+### Other Important Things!
+- Doctype Declaration - This is simply you adding a line at the top of your HTML file (before everything else) that tells the browser which version of HTML you are using. It used to be very complicated. Now it just looks like this:
+
+    <!DOCTYPE HTML>
+
+- HTML - Wrap everything under doctype declaration in a HTML tag. This is just to tell the browser, "HEY! Everything here is in HTML. Not German."
+
+    <!DOCTYPE HTML>
+    <html>
+    <!-- EVERYTHING ELSE -->
+    </html>    
+
+- Head tag - These include information about the page that aren't seen within the browser, including:
+  - Title - What you see at the top of the browser
+
+    <!DOCTYPE HTML>
+    <html>
+      <head>
+        <title>This is my first web page!</title>    
+      </head>      
+    </html>
+
+- Meta Tags - Give you more info about the page that you don't see, such as whether we want a user to be able to cache a web page or adding Google Analytics to a web page. The most important one we will use is one that defines the character set we will use, which is:
+
+    <meta charset="UTF-8" />
+
+What is different about this tag is that it is an empty element, because it doesn't really have any content to display. You will see how this works as we go ahead. For example, we have elements for line breaks and images that don't have text content in it, so that is when we will start using empty elements.
+
+- Body Tag - This includes everything that will be seen in the browser. You put this right after the head tag, within the HTML tag.
+
+    <!DOCTYPE HTML>
+    <html>
+      <head>
+        <meta charset="utf-8">    
+        <title>This is my first web page!</title>    
+      </head>      
+      <body>
+        <h1>Hello world!</h1>    
+      </body>
+    </html>  
+
+- Comments - This is text that isn't HTML and won't be shown in the browser. It is just for personal reference (so you can understand your code later), and for other people to understand (so they can change your code later). It is a good idea to comment your code, as you can go back to it later and read the comments if you don't understand what it is saying. This will not be shown in the webpage. But it will be shown when you view source, so don't do anything silly.
+
+    <!-- Hello. I'm a comment. -->
+
+So now that we've learned all of these things, we have the basic structure of a real HTML page. Now let's practice this in our helloworld.html file.
+
+    <!DOCTYPE HTML>
+    <html>
+      <head>
+        <meta charset="UTF-8">
+        <title>HackBU Project</title>
+      </head>
+      <body>
+        <h1>This is my first web page!</h1>
+        <p>This is my first paragraph.</p>
+      </body>
+    </html>
+
+Now that we understand the basic structure and syntax of HTML, we will talk about the specific types of elements that HTML offers.
+
 
 # HTML Text and Lists
 Most of any website is text, which is why the first thing we are going to cover is text!
