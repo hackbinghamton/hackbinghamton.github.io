@@ -118,15 +118,15 @@ What is different about this tag is that it is an empty element, because it does
 - Body Tag - This includes everything that will be seen in the browser. You put this right after the head tag, within the HTML tag.
 
     <!DOCTYPE HTML>
-    <html>
-      <head>
-        <meta charset="utf-8">    
-        <title>This is my first web page!</title>    
-      </head>      
-      <body>
-        <h1>Hello world!</h1>    
-      </body>
-    </html>  
+        <html>
+          <head>
+            <meta charset="utf-8">    
+            <title>This is my first web page!</title>    
+          </head>      
+          <body>
+            <h1>Hello world!</h1>    
+          </body>
+        </html>  
 
 - Comments - This is text that isn't HTML and won't be shown in the browser. It is just for personal reference (so you can understand your code later), and for other people to understand (so they can change your code later). It is a good idea to comment your code, as you can go back to it later and read the comments if you don't understand what it is saying. This will not be shown in the webpage. But it will be shown when you view source, so don't do anything silly.
 
@@ -155,12 +155,12 @@ Most of any website is text, which is why the first thing we are going to cover 
 ## Level 1-6 Headers
 h1 is used for main headings, h2-h6 for subheadings
 
-  <h1>This is a Level 1 Heading</h1>
-  <h2>This is a Level 2 Heading</h2>
-  <h3>This is a Level 3 Heading</h3>
-  <h4>This is a Level 4 Heading</h4>
-  <h5>This is a Level 5 Heading</h5>
-  <h6>This is a Level 6 Heading</h6>
+    <h1>This is a Level 1 Heading</h1>
+    <h2>This is a Level 2 Heading</h2>
+    <h3>This is a Level 3 Heading</h3>
+    <h4>This is a Level 4 Heading</h4>
+    <h5>This is a Level 5 Heading</h5>
+    <h6>This is a Level 6 Heading</h6>
 
 <h1>This is a Level 1 Heading</h1>
 <h2>This is a Level 2 Heading</h2>
@@ -172,9 +172,8 @@ h1 is used for main headings, h2-h6 for subheadings
 ## Paragraphs
 Primarily used for body text.
 
-  <p>Bacon ipsum dolor sit amet frankfurter short loin brisket, pork chop leberkas short ribs swine t-bone bresaola beef venison salami boudin corned beef. Shoulder leberkas pastrami kevin turducken frankfurter flank drumstick strip steak landjaeger pig hamburger swine short loin venison. Pork ham salami, ground round andouille tenderloin boudin jowl kevin pork chop. Pastrami sirloin brisket beef fatback jerky ribeye drumstick tongue kielbasa chuck hamburger jowl filet mignon.</p>
-
-  <p>Sausage chicken boudin strip steak ball tip turducken beef ribs venison sirloin biltong. Pork belly cow chuck tongue brisket doner andouille turducken pig. Pork chop shoulder corned beef pig ground round short ribs tail strip steak frankfurter brisket rump. Tongue doner short loin hamburger. Swine shank hamburger salami, ball tip bresaola pork chop boudin pig leberkas meatball tail.</p>
+    <p>Bacon ipsum dolor sit amet frankfurter short loin brisket, pork chop leberkas short ribs swine t-bone bresaola beef venison salami boudin corned beef. Shoulder leberkas pastrami kevin turducken frankfurter flank drumstick strip steak landjaeger pig hamburger swine short loin venison. Pork ham salami, ground round andouille tenderloin boudin jowl kevin pork chop. Pastrami sirloin brisket beef fatback jerky ribeye drumstick tongue kielbasa chuck hamburger jowl filet mignon.</p>
+    <p>Sausage chicken boudin strip steak ball tip turducken beef ribs venison sirloin biltong. Pork belly cow chuck tongue brisket doner andouille turducken pig. Pork chop shoulder corned beef pig ground round short ribs tail strip steak frankfurter brisket rump. Tongue doner short loin hamburger. Swine shank hamburger salami, ball tip bresaola pork chop boudin pig leberkas meatball tail.</p>
 
 Bacon ipsum dolor sit amet frankfurter short loin brisket, pork chop leberkas short ribs swine t-bone bresaola beef venison salami boudin corned beef. Shoulder leberkas pastrami kevin turducken frankfurter flank drumstick strip steak landjaeger pig hamburger swine short loin venison. Pork ham salami, ground round andouille tenderloin boudin jowl kevin pork chop. Pastrami sirloin brisket beef fatback jerky ribeye drumstick tongue kielbasa chuck hamburger jowl filet mignon.
 
@@ -186,7 +185,6 @@ This is an example of semantic markup VS structural markup. Bold and Italic simp
 By default, strong and bold look the same, and italics and em look the same. They are inline elements.
 
     <p>Ball tip beef pork belly, pork loin andouille corned beef drumstick short ribs landjaeger salami short loin flank venison pork. Leberkas swine fatback, jowl salami doner tail andouille beef bresaola turkey. <b>Beef ribs</b> pastrami chicken prosciutto, short ribs meatloaf hamburger sausage chuck short loin salami ribeye beef ground round. Swine shankle frankfurter spare ribs chicken turkey strip steak boudin. Turducken beef ribs short loin spare ribs leberkas swine frankfurter <i>hamburger</i> kielbasa pancetta.</p>
-
     <p>Jerky cow bresaola ham hock, doner short ribs tri-tip salami spare ribs pastrami porchetta landjaeger. Jerky doner turducken pork chop jowl ground round porchetta, beef ribs capicola leberkas strip steak. Sirloin landjaeger <strong>meatloaf</strong>, meatball bresaola swine drumstick hamburger kielbasa pig flank turducken pastrami. Landjaeger filet mignon chicken ball tip rump, turkey shoulder pastrami flank brisket short ribs drumstick chuck sirloin shankle. Shankle pastrami corned beef, venison pig meatball boudin <i>pork chop</i> tri-tip spare ribs pork belly. Chuck drumstick rump brisket beef spare ribs pork belly pastrami frankfurter flank tail. Salami short ribs landjaeger ham hock shankle, ground round turkey pastrami beef.</p>
 
 <p>Ball tip beef pork belly, pork loin andouille corned beef drumstick short ribs landjaeger salami short loin flank venison pork. Leberkas swine fatback, jowl salami doner tail andouille beef bresaola turkey. <b>Beef ribs</b> pastrami chicken prosciutto, short ribs meatloaf hamburger sausage chuck short loin salami ribeye beef ground round. Swine shankle frankfurter spare ribs chicken turkey strip steak boudin. Turducken beef ribs short loin spare ribs leberkas swine frankfurter <i>hamburger</i> kielbasa pancetta.</p>
@@ -196,8 +194,8 @@ By default, strong and bold look the same, and italics and em look the same. The
 ## Superscript and Subscript
 For all the mathematicians and chemists.
 
-  <p>My birthday is January 31<sup>st</sup>, 1993</p>
-  <p>Vitamin water is essentially just C<sub>6</sub>H<sub>12</sub>O<sub>6</sub></p>
+    <p>My birthday is January 31<sup>st</sup>, 1993</p>
+    <p>Vitamin water is essentially just C<sub>6</sub>H<sub>12</sub>O<sub>6</sub></p>
 
 <p>My birthday is January 31<sup>st</sup>, 1993</p>
 <p>Vitamin water is essentially just C<sub>6</sub>H<sub>12</sub>O<sub>6</sub></p>
@@ -206,10 +204,10 @@ For all the mathematicians and chemists.
 ## Line Breaks and Horizontal Rule 
 These push the content afterwards onto a new line. These are empty elements.
 
-  <p>Would you please<br /> just let me<br /> finish this sentence<br> on one line?</p>
-  <p>I don't like the sentence below me.</p>
-  <hr>
-  <p>What is that line doing there?</p>
+    <p>Would you please<br /> just let me<br /> finish this sentence<br> on one line?</p>
+    <p>I don't like the sentence below me.</p>
+    <hr>
+    <p>What is that line doing there?</p>
 
 <p>Would you please<br /> just let me<br /> finish this sentence<br> on one line?</p>
 <p>I don't like the sentence below me.</p>
@@ -219,10 +217,10 @@ These push the content afterwards onto a new line. These are empty elements.
 ## Whitespace Collapsing
 Unless you specify, simply pressing enter on a line will not create a new line on the web page. In addition, any amount of spaces will simply show a single space. This is known as whitespace collapsing.
 
-  <p>This is an example of whitespace collapsing</p>
-  <p>This       is an example of whitespace collapsing</p>
-  <p>This is an           example of whitespace collapsing</p>
-  <p>This is an example of           whitespace 
+    <p>This is an example of whitespace collapsing</p>
+    <p>This       is an example of whitespace collapsing</p>
+    <p>This is an           example of whitespace collapsing</p>
+    <p>This is an example of           whitespace 
             collapsing</p>
 
 <p>This is an example of whitespace collapsing</p>
@@ -232,26 +230,26 @@ Unless you specify, simply pressing enter on a line will not create a new line o
 
 ## Quotations
 Blockquotes are block elements (as you can assume), and regular quotes are inline items, like strong and em.
-    
+
     <blockquote>
     <p>Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing.</p>
     </blockquote>
-  <p>Samuel L. Jackson said <q>English, motherfucker! Do you speak it?!<q></p>
+    <p>Samuel L. Jackson said <q>English, mother! Do you speak it?!<q></p>
 
 <blockquote>
   <p>Well, the way they make shows is, they make one show. That show's called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they're going to make more shows. Some pilots get picked and become television programs. Some don't, become nothing. She starred in one of the ones that became nothing.
   </p>
 </blockquote>
 
-<p>Samuel L. Jackson said <q>English, motherfucker! Do you speak it?!<q></p>
+<p>Samuel L. Jackson said <q>English, mother! Do you speak it?!<q></p>
 
 
 
 ## Abbreviations and Acronyms 
 These must contain a title attribute. What is contained in these attributes will be shown in a tooltip when you hover over the element.
-    
-  <p><abbr title="Hyper-text markup language">HTML</abbr> is a term you all should be familiar with by now.</p>
-  <p><abbr title="Doctor">Doc.</abbr>, <abbr title="professor">Prof.</abbr>, and <abbr title="mister">MR.</abbr> should also be familiar to you.</p> 
+
+    <p><abbr title="Hyper-text markup language">HTML</abbr> is a term you all should be familiar with by now.</p>
+    <p><abbr title="Doctor">Doc.</abbr>, <abbr title="professor">Prof.</abbr>, and <abbr title="mister">MR.</abbr> should also be familiar to you.</p> 
 
 <p><abbr title="Hyper-text markup language">HTML</abbr> is a term you all should be familiar with by now.</p>
 <p><abbr title="Doctor">Doc.</abbr>, <abbr title="professor">Prof.</abbr>, and <abbr title="mister">Mr.</abbr> should also be familiar to you.</p> 
@@ -260,7 +258,7 @@ These must contain a title attribute. What is contained in these attributes will
 ## Citations and Definitions
 Citations are used for sources that you are not your own.
 
-  <p><cite>Flowers for Algernon</cite> was a book I read last semester for English. It was really good.</p>
+    <p><cite>Flowers for Algernon</cite> was a book I read last semester for English. It was really good.</p>
 
 <p><cite>Flowers for Algernon</cite> was a book I read last semester for English. It was really good.</p>   
 
@@ -273,11 +271,11 @@ Definitions are used for important terms.
 ## Addresses 
 Simply contain information about your address and contact information. This is an example of semantic markup.
 
-  <address>
-      <p><a href="mailto:pliu7@binghamton.edu">pliu7@binghamton.edu</a></p>
-      <p>20 Hawley Street</p>
-      <p>Binghamton, NY 13901</p>
-  </address>
+    <address>
+        <p><a href="mailto:pliu7@binghamton.edu">pliu7@binghamton.edu</a></p>
+        <p>20 Hawley Street</p>
+        <p>Binghamton, NY 13901</p>
+    </address>
 
 <address>
   <p><a href="mailto:pliu7@binghamton.edu">pliu7@binghamton.edu</a></p>
@@ -288,11 +286,11 @@ Simply contain information about your address and contact information. This is a
 ## Changes to Content - Deletions, Insertions, and Strikethroughs
 You can bring to notice changes in your content, like awesome price cuts or mistakes you made.
 
-  <p>My favorite fruits are <del>apples</del> <ins>bananas</ins>!</p>
-  <p>The price of the Moto X: <br />
+    <p>My favorite fruits are <del>apples</del> <ins>bananas</ins>!</p>
+    <p>The price of the Moto X: <br />
           <s>was $499</s><br />
           now $349!
-  </p>
+    </p>
 
 <p>My favorite fruits are <del>apples</del> <ins>bananas</ins>!</p>
 <p>The price of the Moto X: <br />
@@ -307,14 +305,14 @@ Lists are comprised of two types of elements: the list itself and the list items
 ## Ordered Lists 
 As the name suggests, lists all of its items in numerical order.
 
-  <p>These are a few of my favorite things (ranked from most favorite to least favorite):
-  <ol>
+    <p>These are a few of my favorite things (ranked from most favorite to least favorite):
+    <ol>
       <li>Bubble baths</li>
       <li>Teaching web development</li>
       <li>Picking things up and putting them down</li>
       <li>Espresso</li>
       <li>Oxford shirts from Uniqlo</li>
-  </ol>
+    </ol>
 
 <p>These are a few of my favorite things (ranked from most favorite to least favorite):</p>
 <ol>
@@ -335,7 +333,7 @@ These lists simply add a bullet next to each item.
       <li>Five <abbr title="pounds">lbs.</abbr> of chicken breast</li>
       <li>Whole Wheat Pasta</li>
       <li>Beer from Wegman's</li>
-  </ul>
+    </ul>
 
 <p>Shopping List</p>
 <ul>
@@ -370,8 +368,8 @@ These are used for definitions, and are a bit different from normal lists. Each 
 ## Nested Lists 
 You can put lists inside of lists! Listception!
 
-  <p>List of Movies Where Leonardo DiCaprio:</p>
-  <ul>
+    <p>List of Movies Where Leonardo DiCaprio:</p>
+    <ul>
     <li>
       <p>Is arrested for fraud:</p>
       <ol>
@@ -393,7 +391,7 @@ You can put lists inside of lists! Listception!
         <li>Shutter Island</li>
       </ol>
     </li>
-  </ul>
+    </ul>
 
 <p>List of Movies Where Leonardo DiCaprio:</p>
 <ul>
@@ -419,7 +417,6 @@ You can put lists inside of lists! Listception!
     </ol>
   </li>
 </ul>
-
 
 Now that we've learned about these elements, we will use them for your own personal benefit...not in an evil way. 
 
@@ -484,9 +481,9 @@ In the CSS file:
     }
 
 Each declaration follows the same format: 
-    
+
     selector {
-      property: value;
+        property: value;
     }
 
 The selector is the element you want to target, the property is the attribute of the element you want to change, and value is what you want to change it to.
@@ -522,6 +519,7 @@ Create a separate file called "styles.css" (or anything that you want), and add 
     }
 
 Then in your HTML file, add this line:
+
     <link href="styles.css" rel="stylesheet" type="text/css">
 
 The href refers to the CSS file you want to use, rel tells the file what the relationship between the two files are, the type is text/css.
@@ -550,7 +548,7 @@ CSS:
     }
     
 HTML:
-    
+
     <h1>I am going to be a tiny header.</h1>
 
 ### Specificity Takes Precedence
@@ -563,6 +561,7 @@ CSS:
     p.pretty {
       color: cyan;
     }
+    
 HTML:
 
     <p class="pretty">I feel pretty</p> 
@@ -574,25 +573,25 @@ Other things are not. For example, if you don't want a border around every eleme
 # CSS Color
 There are multiple ways of specifying color in CSS.
 One way is through the predefined name for a color. You can Google these.
-    
+
     body {
       color: red;
     }
 
 Another way is to use a hex-code. I don't want to go into too much detail about these, but these specify the amount of red, green, and blue in the color:
-    
+
     body {
       color: #FAFAFA;
     }
 
 There is also another way to specify the amount of red, green, and blue in a color. These values range from 0 to 255.
-    
+
     body {
       color: rgb(100,100,100)
     }
 
 We can also define a color using hue, saturation, and lightness:
-    
+
     body {
       color: hsl(0, 0%, 78%);
     }
@@ -628,7 +627,7 @@ Specifying a font-face lets use choose a font, given we know where to get it. It
 
 You can specify the font name and provide a URL for where to find the font.
 Then you can use that font in the font-family property:
-    
+
     body {
       font-family: 'Open Sans', Helvetica, Arial, sans-serif;
     }
@@ -660,7 +659,7 @@ We can also use percentages and ems, which are relative to the size of body font
 
 ### font-weight
 There are five different values for the weight of a font. 
-  
+
     .font-weight {
       font-weight: bold; 
       /* font-weight: normal; */
