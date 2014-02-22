@@ -10,7 +10,7 @@ location: LH 14
 semester: Spring
 week: 0
 
-date: '2014-01-40T20:00:00-05:00'
+date: '2014-01-30T20:00:00-05:00'
 permalink: /workshops/2014/spring/welcome-to-hackbu/
 ---
 
