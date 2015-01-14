@@ -1,21 +1,30 @@
     __  __           __   ____  __  __
    / / / /___ ______/ /__/ __ )/ / / /
-  / /_/ / __ `/ ___/ //_/ __  / / / / 
- / __  / /_/ / /__/ ,< / /_/ / /_/ /  
-/_/ /_/\__,_/\___/_/|_/_____/\____/   
+  / /_/ / __ `/ ___/ //_/ __  / / / /
+ / __  / /_/ / /__/ ,< / /_/ / /_/ /
+/_/ /_/\__,_/\___/_/|_/_____/\____/
 
 Created by:
 * Daniel O'Connor '14
-* Daxid Lui '14
+* Davix Lui '14
 * Yuval Shafir '16
 * Alex Terela '16
 * Peter Liu '15
 * Itai Ferber '16
 * Jules Forrest '14
 
+Current members:
+* Itai Ferber '16
+* Chris Beard '16
+* Alex Terela '16
+* Erik Langert '17
+* Lucas Eager-Leavitt '16
+* Yuval Shafir '16
+* Carly Schneider '16
+
 Special thanks to:
-* Jonathan Heisler '13 - provided great photos for the website
-* HackMcgill - website structure and content inspiration
+* Jonathan Heisler '13 for providing great photos for the website
+* HackMcGill for website structure and content inspiration
 
 Created with:
 * HTML5 Boilerplate
@@ -23,3 +32,4 @@ Created with:
 * git
 * GitHub
 * normalize.css
+
