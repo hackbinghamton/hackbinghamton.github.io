@@ -8,7 +8,7 @@ In addition to cloning the HackBU repository, you'll need a few things to run Ha
 
 1. **Ruby** - Jekyll requires Ruby. If you're on a Mac, you most likely have Ruby. You can confirm this by running `ruby --version` in the command line. Follow [these instructions](https://www.ruby-lang.org/en/downloads/) to install Ruby if needed.
 
-2. **Bundler** - Bundler is a package manager that makes versioning Ruby software like Jekyll a lot easier and is highly recommended if you're going to be building GitHub Pages sites locally. If you don't already have Bunder installed, you can install it by running the command `gem install bundler`.
+2. **Bundler** - Bundler is a package manager that makes versioning Ruby software like Jekyll a lot easier and is highly recommended if you're going to be building GitHub Pages sites locally. If you don't already have Bundler installed, you can install it by running the command `gem install bundler`.
 
 3. **Jekyll** - Run the command `bundle install` in the project directory to download and install Jekyll. (Try using `sudo bundle install` if you run into problems.)
 
