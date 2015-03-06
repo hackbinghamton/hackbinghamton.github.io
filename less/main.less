@@ -108,6 +108,10 @@ a {
 	color: #54795b;
 }
 
+abbr {
+	cursor: help;
+}
+
 table {
 	background: #fff;
 	display: block;
@@ -130,6 +134,14 @@ th {
 
 .th-time {
 	min-width: 6em;
+}
+
+.th-date {
+	min-width: 7em;
+}
+
+.th-location {
+	min-width: 6.5em;
 }
 
 tr:nth-child(even) {}
@@ -360,13 +372,17 @@ th, td {
 	padding: 0;
 
 	li {
-		display: inline;
-		margin-right: 0em;
+		float: left;
+		list-style: none;
+		margin-bottom: 2em;
+		margin-right: 0;
+		text-align: center;
+		width: 33%;
 	}
 
 	img {
 		max-height: 100px;
-		max-width: 33%;
+		// max-width: 33%;
 	}
 }
 
