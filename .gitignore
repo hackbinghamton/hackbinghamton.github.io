@@ -1,6 +1,9 @@
 # Jekyll
-# https://github.com/github/gitignore/blob/master/Jekyll.gitignore 
+# https://github.com/github/gitignore/blob/master/Jekyll.gitignore
 _site/
+
+# Ruby/Bundler
+Gemfile.lock
 
 # OSX
 # https://github.com/github/gitignore/blob/master/Global/OSX.gitignore
