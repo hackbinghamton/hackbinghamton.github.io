@@ -5,5 +5,5 @@ fb_app_id: 737007022995217
 root: 'http://hackbu.org'
 safe: true
 lsi: false
-highlighter: pygments
+highlighter: rouge
 markdown: kramdown
