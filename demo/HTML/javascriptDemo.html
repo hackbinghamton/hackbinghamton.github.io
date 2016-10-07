@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>HackBU Demo Page</title>
+        <style>
+body {
+    background: linear-gradient(white, blue);
+}
+.center-and-yellow {
+    background-color: yellow;
+    width: 100px;
+    margin: 0 auto;
+}
+        </style>
+    </head>
+
+    <body>
+
+        <h1>Hello HackBU!</h1>
+
+        <p>Hey everybody, here's a basic web page from scratch</p>
+
+        <div class="center-and-yellow">And a centered div with styles</div>
+
+        <button onclick="doTheAlert()" id="mybutton">My button!</button>
+
+        <p id="someParagraph">Some text</p>
+
+        <script>
+
+
+function doTheAlert() {
+    document.getElementById("someParagraph").innerHTML = "NEW TEXT";
+}
+
+        </script>
+
+</html>
