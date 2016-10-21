@@ -1,0 +1,56 @@
+<html>
+
+    <head>
+        <title>Todo App Demo</title>
+        <style>
+.item {
+    margin: 10px;
+}
+body {
+    background: linear-gradient(lightblue, white);
+}
+.delete-button {
+    margin-left:5px;
+}
+        </style>
+    </head>
+
+    <body>
+        <h1>Swaggy Todo App</h1>
+        <h3>Enter a todo below</h3>
+
+        <input id="input-box"></input>
+        <button onclick="addItem()" >Add!</button>
+
+        <div id="todo-container">
+        </div>
+
+    </body>
+
+    <script>
+function addItem() {
+    var inputBox = document.getElementById("input-box");
+    var text = inputBox.value;
+    if (text == "")
+        return;
+
+    var newitem = document.createElement('div');
+    newitem.className = "item";
+    newitem.innerHTML = text;
+
+    var deleteButton = document.createElement('button');
+    deleteButton.className = "delete-button";
+    deleteButton.innerText = "X";
+    deleteButton.addEventListener("click", function() {
+        this.parentElement.style.display = "none";
+    });
+    newitem.appendChild(deleteButton);
+
+    var todoContainer = document.getElementById("todo-container");
+    todoContainer.appendChild(newitem);
+    
+    return;
+}
+    </script>
+
+</html>
