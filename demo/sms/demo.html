@@ -1,0 +1,104 @@
+<html lang="en">
+  <html>
+    <head>
+      <meta charset="utf-8">
+      <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+
+      <style>
+.phone_number {
+  font-size: 2em;
+  text-align: center;
+  padding: 1em;
+  font-family: 'Open Sans';
+  color: #2c3e50;
+}
+
+.ui {
+  height: 600px;
+}
+
+#box {
+  border-top: 1px solid #bdc3c7;
+  margin: 0 auto;
+  max-width: 800px;
+  height: 600px;
+}
+
+.message {
+  border-bottom: 1px solid #bdc3c7;
+  padding: 15px;
+}
+
+.number {
+  padding: 15px 0 0px 0;
+  font-family: 'Open Sans';
+  color: #7f8c8d;
+}
+
+.msgbody {
+  padding: 15px 0 0 15px;
+  font-family: 'Open Sans';
+  font-size: 1.1em;
+}
+
+      </style>
+
+    </head>
+
+    <body>
+      <div class="number">
+        <h1 class="phone_number">Text us! <br> (703) 348-8203</h1>
+      </div>
+
+      <div class="ui">
+        <div id="box">
+        </div>
+      </div>
+
+      <script type="text/javascript">
+let url = "http://159.203.104.60:8000/pop";
+
+window.onload = function() {
+  poll();
+};
+
+function poll() {
+  fetch(url).then(function(response) {
+    return response.json();
+  }).then(function(data) {
+    console.log(data);
+    let list = document.getElementById("box");
+
+    data.forEach(function(d) {
+      console.log(d);
+
+      var msg = document.createElement("div");
+      msg.className += 'message';
+
+      var from = document.createElement("span");
+      from.className += 'number';
+      from.innerHTML = d.message.replace("+","");
+
+      var messagebody = document.createElement("span");
+      messagebody.className += 'msgbody';
+      messagebody.innerHTML = d.message;
+
+      //msg.appendChild(from);
+      msg.appendChild(messagebody);
+      list.appendChild(msg);
+      list.insertBefore(msg, list.firstChild);
+    });
+
+    //poll(); //TODO do with an event instead of recursion
+    window.scrollTo(0,document.body.scrollHeight);
+
+  }).catch(function(e) {
+    console.log(e);
+  });
+}
+
+
+
+      </script>
+    </body>
+  </html>
