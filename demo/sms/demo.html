@@ -1,10 +1,9 @@
-<html lang="en">
-  <html>
-    <head>
-      <meta charset="utf-8">
-      <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
 
-      <style>
+    <style>
 .phone_number {
   font-size: 2em;
   text-align: center;
@@ -41,21 +40,21 @@
   font-size: 1.1em;
 }
 
-      </style>
+    </style>
 
-    </head>
+  </head>
 
-    <body>
-      <div class="number">
-        <h1 class="phone_number">Text us! <br> (703) 348-8203</h1>
+  <body>
+    <div class="number">
+      <h1 class="phone_number">Text us! <br> (703) 348-8203</h1>
+    </div>
+
+    <div class="ui">
+      <div id="box">
       </div>
+    </div>
 
-      <div class="ui">
-        <div id="box">
-        </div>
-      </div>
-
-      <script type="text/javascript">
+    <script type="text/javascript">
 let url = "http://159.203.104.60:8000/pop";
 
 window.onload = function() {
@@ -89,7 +88,7 @@ function poll() {
       list.insertBefore(msg, list.firstChild);
     });
 
-    //poll(); //TODO do with an event instead of recursion
+    poll(); //TODO do with an event instead of recursion
     window.scrollTo(0,document.body.scrollHeight);
 
   }).catch(function(e) {
@@ -97,8 +96,7 @@ function poll() {
   });
 }
 
+    </script>
+  </body>
+</html>
 
-
-      </script>
-    </body>
-  </html>

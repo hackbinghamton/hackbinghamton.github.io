@@ -1,0 +1,77 @@
+<html>
+  <head>
+    <style>
+canvas {
+  background-color: lightblue;
+}
+    </style>
+  </head>
+
+  <body>
+
+    <canvas id="canvas"></canvas>
+
+    <script>
+const url = "http://159.203.104.60:8000/pop"; //Python server endpoint
+const directions = ["up", "down", "left", "right"];
+const canvas = document.getElementById("canvas");
+const ctx = canvas.getContext("2d");
+const increment = 25; //Pixels to move per command
+const width = 800;
+const height = 600;
+var x = width / 2; //Starting point
+var y = height / 2;
+
+window.onload = function() {
+  canvas.width = width; //Set up canvas
+  canvas.height = height;
+  draw(); //Draw initial starting point
+  poll(); //Begin infinitely polling the server
+};
+
+
+function draw() {
+  ctx.clearRect(0, 0, width, height); //Clear the canvas
+  ctx.beginPath();
+  ctx.arc(x,y,6,0,Math.PI*2); //Draw our new circle
+  ctx.fill();
+}
+
+function poll() {
+  fetch(url).then(function(response) { //Ask server for new messages
+    return response.json(); //Parse out JSON
+  }).then(function(data) {
+    data = data.map(function(d) { return d.message.trim().toLowerCase(); }); //Clean up people's texts
+    return data.filter(function(d) { return (directions.indexOf(d) !== -1) }); //Ensure it's in the list of directions
+  }).then(function(data) {
+    data.forEach(function(d) {
+      switch (d) { //Change x/y appropriately
+        case 'left':
+          x -= increment;
+          break;
+        case 'right':
+          x += increment;
+          break;
+        case 'up':
+          y -= increment;
+          break;
+        case 'down':
+          y += increment;
+          break;
+        default:
+          console.log("shouldnt get here");
+      }
+      x = Math.min(Math.max(0, x), width); //Obey walls
+      y = Math.min(Math.max(0, y), height);
+      draw(); //Update canvas
+    });
+    poll(); //TODO do with an event instead of recursion
+  }).catch(function(e) {
+    console.log(e); //Something went wrong with server
+  });
+}
+
+    </script>
+  </body>
+
+</html>
