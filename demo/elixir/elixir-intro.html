@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Introduction to Elixir Programming</title>
+<meta name="author" content="(Taylor Foxhall)"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="http://cdn.jsdelivr.net/reveal.js/3.0.0/css/reveal.css"/>
+
+<link rel="stylesheet" href="http://cdn.jsdelivr.net/reveal.js/3.0.0/css/theme/night.css" id="theme"/>
+
+<link rel="stylesheet" href="./presentation.css"/>
+
+<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+<script>
+    if( window.location.search.match( /print-pdf/gi ) ) {
+        var link = document.createElement( 'link' );
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = 'http://cdn.jsdelivr.net/reveal.js/3.0.0/css/print/pdf.css';
+        document.getElementsByTagName( 'head' )[0].appendChild( link );
+    }
+</script>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide"><h1 class="title">Introduction to Elixir Programming</h1><h2 class="author">Taylor Foxhall</h2><p class="date">Created: 2017-02-16 Thu 21:19</p>
+</section>
+<section>
+<section id="slide-orge7fec02">
+<h2 id="orge7fec02">La Introducción</h2>
+<p>
+Elixir es:
+</p>
+<ul>
+<li class="fragment appear">Un idioma moderno (1.0 lanzó en 2014) con la sintaxis de Ruby</li>
+<li class="fragment appear">Dinámico</li>
+<li class="fragment appear">Compiló y ejecutó en la máquina virtual BEAM</li>
+
+</ul>
+</section>
+<section id="slide-org18ee962">
+<h3 id="org18ee962">Introduction</h3>
+<p>
+Elixir is:
+</p>
+<ul>
+<li>A modern language (1.0 was released in 2014) with Ruby-ish syntax</li>
+<li>Dynamically typed</li>
+<li>Compiled and ran on the BEAM virtual machine</li>
+
+</ul>
+</section>
+</section>
+<section>
+<section id="slide-org209b124">
+<h2 id="org209b124">Basic Syntax</h2>
+<div class="outline-text-2" id="text-org209b124">
+</div></section>
+<section id="slide-orge3e71a0">
+<h3 id="orge3e71a0">Arithmetic</h3>
+<div class="org-src-container">
+
+<pre  class="src src-elixir">iex(1)&gt; 2 + 3
+5
+iex(2)&gt; 2 - 1
+1
+iex(3)&gt; 2 * 5
+10
+iex(4)&gt; 3 / 6
+0.5
+iex(5)&gt; 10 / 2
+5.0
+iex(6)&gt; div(10, 2)
+5
+iex(7)&gt; rem(10, 2)
+0
+</pre>
+</div>
+</section>
+<section id="slide-orga7000aa">
+<h3 id="orga7000aa">Boolean Algebra</h3>
+<div class="org-src-container">
+
+<pre  class="src src-elixir">iex(8)&gt; -20 || <span style="color: #87cefa;">true</span>
+-20
+iex(9)&gt; <span style="color: #87cefa;">false</span> || 42
+42
+iex(10)&gt; 42 &amp;&amp; <span style="color: #87cefa;">true</span>
+<span style="color: #87cefa;">true</span>
+iex(11)&gt; !false
+<span style="color: #87cefa;">true</span>
+iex(12)&gt; <span style="color: #87cefa;">true</span> <span style="color: #5180b3;">and</span> 42
+42
+iex(13)&gt; <span style="color: #87cefa;">false</span> <span style="color: #5180b3;">or</span> <span style="color: #87cefa;">true</span>
+<span style="color: #87cefa;">true</span>
+iex(14)&gt; <span style="color: #5180b3;">not</span> <span style="color: #87cefa;">false</span>
+<span style="color: #87cefa;">true</span>
+</pre>
+</div>
+</section>
+<section id="slide-org3fed50a">
+<h3 id="org3fed50a">Note about <code>and</code> and <code>&amp;&amp;</code></h3>
+<div class="org-src-container">
+
+<pre  class="src src-elixir">iex(15)&gt; 42 <span style="color: #5180b3;">and</span> <span style="color: #87cefa;">true</span>
+,** (<span style="color: #cd5542;">BadBooleanError</span>) expected a boolean on left-side of <span style="color: #bdbc61;">"and"</span>,
+  <span style="color: #87cefa;">got:</span> 42
+
+iex(15)&gt; <span style="color: #5180b3;">not</span> 42
+,** (<span style="color: #cd5542;">ArgumentError</span>) argument error
+<span style="color: #87cefa;">:erlang</span>.not(42)
+</pre>
+</div>
+<aside class="notes">
+<p>
+42 &amp;&amp; true =&gt; true
+</p>
+
+</aside>
+</section>
+<section id="slide-org779a37a">
+<h3 id="org779a37a">Comparisons</h3>
+<div class="org-src-container">
+
+<pre  class="src src-elixir">iex(15)&gt; 1 &gt; 2
+<span style="color: #87cefa;">false</span>
+iex(16)&gt; 1 != 2
+<span style="color: #87cefa;">true</span>
+iex(17)&gt; 2 == 2
+<span style="color: #87cefa;">true</span>
+iex(18)&gt; 2 &lt;= 3
+<span style="color: #87cefa;">true</span>
+iex(19)&gt; 2 == 2.0
+<span style="color: #87cefa;">true</span>
+iex(20)&gt; 2 === 2.0
+<span style="color: #87cefa;">false</span>
+</pre>
+</div>
+</section>
+<section id="slide-org4888c41">
+<h3 id="org4888c41">Atoms</h3>
+<div class="org-src-container">
+
+<pre  class="src src-elixir">iex(21)&gt; <span style="color: #87cefa;">:foo</span>
+<span style="color: #87cefa;">:foo</span>
+iex(22)&gt; <span style="color: #87cefa;">:foo</span> == <span style="color: #87cefa;">:bar</span>
+<span style="color: #87cefa;">false</span>
+iex(23)&gt; is_atom(<span style="color: #87cefa;">:true</span>)
+<span style="color: #87cefa;">true</span>
+iex(24)&gt; is_boolean(<span style="color: #87cefa;">:true</span>)
+<span style="color: #87cefa;">true</span>
+iex(25)&gt; <span style="color: #87cefa;">:true</span> === <span style="color: #87cefa;">true</span>
+<span style="color: #87cefa;">true</span>
+</pre>
+</div>
+</section>
+<section id="slide-org1998c3f">
+<h3 id="org1998c3f">Strings</h3>
+<div class="org-src-container">
+
+<pre  class="src src-elixir">iex(26)&gt; <span style="color: #bdbc61;">"foo"</span>
+<span style="color: #bdbc61;">"foo"</span>
+iex(27)&gt; <span style="color: #bdbc61;">"foo"</span> == <span style="color: #bdbc61;">"bar"</span>
+<span style="color: #87cefa;">false</span>
+iex(28)&gt; <span style="color: #baba36;">name</span> = <span style="color: #bdbc61;">"Taylor"</span>
+<span style="color: #bdbc61;">"Taylor"</span>
+iex(29)&gt; <span style="color: #bdbc61;">"Hello "</span> &lt;&gt; name
+<span style="color: #bdbc61;">"Hello Taylor"</span>
+iex(30)&gt; <span style="color: #bdbc61;">"Hello </span><span style="color: #baba36;">#{name}</span><span style="color: #bdbc61;">"</span>
+<span style="color: #bdbc61;">"Hello Taylor"</span>
+</pre>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-org3397fc5">
+<h2 id="org3397fc5">Collections</h2>
+<div class="outline-text-2" id="text-org3397fc5">
+</div></section>
+<section id="slide-org901dfc9">
+<h3 id="org901dfc9">Lists</h3>
+<div class="org-src-container">
+
+<pre  class="src src-elixir">iex(1)&gt; [3.14, <span style="color: #87cefa;">:pie</span>, <span style="color: #bdbc61;">"Apple"</span>]
+[3.14, <span style="color: #87cefa;">:pie</span>, <span style="color: #bdbc61;">"Apple"</span>]
+iex(2)&gt; <span style="color: #baba36;">list</span> = [3.14, <span style="color: #87cefa;">:pie</span>, <span style="color: #bdbc61;">"Apple"</span>]
+[3.14, <span style="color: #87cefa;">:pie</span>, <span style="color: #bdbc61;">"Apple"</span>]
+<span style="color: #656565;"># </span><span style="color: #757575;">Prepending</span>
+iex(3)&gt; [<span style="color: #bdbc61;">"&#960;"</span>] ++ list
+[<span style="color: #bdbc61;">"&#960;"</span>, 3.14, <span style="color: #87cefa;">:pie</span>, <span style="color: #bdbc61;">"Apple"</span>]
+<span style="color: #656565;"># </span><span style="color: #757575;">Appending</span>
+iex(4)&gt; list ++ [<span style="color: #bdbc61;">"Cherry"</span>]
+[3.14, <span style="color: #87cefa;">:pie</span>, <span style="color: #bdbc61;">"Apple"</span>, <span style="color: #bdbc61;">"Cherry"</span>]
+iex(5)&gt; list -- [<span style="color: #87cefa;">:pie</span>, 4]
+[3.14, <span style="color: #bdbc61;">"Apple"</span>]
+</pre>
+</div>
+</section>
+<section >
+<div class="org-src-container">
+
+<pre  class="src src-elixir">iex(2)&gt; <span style="color: #baba36;">list</span> = [3.14, <span style="color: #87cefa;">:pie</span>, <span style="color: #bdbc61;">"Apple"</span>]
+[3.14, <span style="color: #87cefa;">:pie</span>, <span style="color: #bdbc61;">"Apple"</span>]
+iex(6)&gt; hd list
+3.14
+iex(7)&gt; tl list
+[<span style="color: #87cefa;">:pie</span>, <span style="color: #bdbc61;">"Apple"</span>]
+</pre>
+</div>
+<aside class="notes">
+<p>
+Lists are implemented as Linked Lists, ++/2 is O(n)
+</p>
+
+</aside>
+</section>
+<section id="slide-orgb5c2673">
+<h3 id="orgb5c2673">Tuples</h3>
+<div class="org-src-container">
+
+<pre  class="src src-elixir">iex(8)&gt; {43, <span style="color: #87cefa;">:magic</span>, <span style="color: #bdbc61;">"White Mage"</span>}
+{43, <span style="color: #87cefa;">:magic</span>, <span style="color: #bdbc61;">"White Mage"</span>}
+<span style="color: #656565;"># </span><span style="color: #757575;">Often used to return information about a result</span>
+iex(9)&gt; <span style="color: #cd5542;">File</span>.read(<span style="color: #bdbc61;">"elixir-intro.org"</span>)
+{<span style="color: #87cefa;">:ok</span>, <span style="color: #bdbc61;">"... presentation ..."</span>}
+iex(10)&gt; <span style="color: #cd5542;">File</span>.read(<span style="color: #bdbc61;">"elixir-of-life"</span>)
+{<span style="color: #87cefa;">:error</span>, <span style="color: #87cefa;">:enoent</span>}
+</pre>
+</div>
+<aside class="notes">
+<p>
+Tuples are stored contiguously
+</p>
+
+</aside>
+</section>
+<section id="slide-org6ffe7ff">
+<h3 id="org6ffe7ff">Keyword Lists</h3>
+<div class="org-src-container">
+
+<pre  class="src src-elixir">iex(11)&gt; [<span style="color: #87cefa;">fighter:</span> <span style="color: #bdbc61;">"Draal"</span>, <span style="color: #87cefa;">thief:</span> <span style="color: #bdbc61;">"Rael"</span>]
+[<span style="color: #87cefa;">fighter:</span> <span style="color: #bdbc61;">"Draal"</span>, <span style="color: #87cefa;">thief:</span> <span style="color: #bdbc61;">"Rael"</span>]
+<span style="color: #656565;"># </span><span style="color: #757575;">Same as</span>
+iex(12)&gt; [{<span style="color: #87cefa;">:fighter</span>, <span style="color: #bdbc61;">"Draal"</span>}, {<span style="color: #87cefa;">:thief</span>, <span style="color: #bdbc61;">"Rael"</span>}]
+[<span style="color: #87cefa;">fighter:</span> <span style="color: #bdbc61;">"Draal"</span>, <span style="color: #87cefa;">thief:</span> <span style="color: #bdbc61;">"Rael"</span>]
+</pre>
+</div>
+</section>
+<section id="slide-org62088dd">
+<h3 id="org62088dd">Maps</h3>
+<div class="org-src-container">
+
+<pre  class="src src-elixir">iex(13)&gt; <span style="color: #baba36;">character</span> = %{<span style="color: #87cefa;">:equipped</span> =&gt; <span style="color: #bdbc61;">"Fists"</span>,
+...(13)&gt;               <span style="color: #bdbc61;">"class"</span> =&gt; <span style="color: #87cefa;">:monk</span>}
+%{<span style="color: #87cefa;">:equipped</span> =&gt; <span style="color: #bdbc61;">"Fists"</span>, <span style="color: #bdbc61;">"class"</span> =&gt; <span style="color: #87cefa;">:monk</span>}
+iex(14)&gt; character[<span style="color: #87cefa;">:equipped</span>]
+<span style="color: #bdbc61;">"Fists"</span>
+iex(15)&gt; character[<span style="color: #bdbc61;">"class"</span>]
+<span style="color: #87cefa;">:monk</span>
+iex(16)&gt; character.equipped
+<span style="color: #bdbc61;">"Fists"</span>
+</pre>
+</div>
+</section>
+<section >
+<div class="org-src-container">
+
+<pre  class="src src-elixir">iex(17)&gt; <span style="color: #baba36;">character</span> = %{<span style="color: #87cefa;">name:</span> <span style="color: #bdbc61;">"Malcer"</span>, <span style="color: #87cefa;">hp:</span> 17,
+...(17)&gt;               <span style="color: #87cefa;">class:</span> <span style="color: #87cefa;">:white_mage</span>}
+%{<span style="color: #87cefa;">class:</span> <span style="color: #87cefa;">:white_mage</span>, <span style="color: #87cefa;">hp:</span> 17, <span style="color: #87cefa;">name:</span> <span style="color: #bdbc61;">"Malcer"</span>}
+iex(18)&gt; %{character | <span style="color: #87cefa;">hp:</span> 10}
+%{<span style="color: #87cefa;">class:</span> <span style="color: #87cefa;">:white_mage</span>, <span style="color: #87cefa;">hp:</span> 10, <span style="color: #87cefa;">name:</span> <span style="color: #bdbc61;">"Malcer"</span>}
+iex(19)&gt; character
+%{<span style="color: #87cefa;">class:</span> <span style="color: #87cefa;">:white_mage</span>, <span style="color: #87cefa;">hp:</span> 17, <span style="color: #87cefa;">name:</span> <span style="color: #bdbc61;">"Malcer"</span>}
+iex(20)&gt; character.hp
+17
+</pre>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-org2a13193">
+<h2 id="org2a13193">Pattern Matching</h2>
+<div class="org-src-container">
+
+<pre  class="src src-elixir">iex(1)&gt; <span style="color: #baba36;">shopping_list</span> = [<span style="color: #bdbc61;">"apples"</span>, <span style="color: #bdbc61;">"grapes"</span>, <span style="color: #bdbc61;">"kale"</span>]
+[<span style="color: #bdbc61;">"apples"</span>, <span style="color: #bdbc61;">"grapes"</span>, <span style="color: #bdbc61;">"kale"</span>]
+iex(2)&gt; [apples, grapes, kale] = shopping_list
+[<span style="color: #bdbc61;">"apples"</span>, <span style="color: #bdbc61;">"grapes"</span>, <span style="color: #bdbc61;">"kale"</span>]
+iex(3)&gt; apples
+<span style="color: #bdbc61;">"apples"</span>
+iex(4)&gt; grapes
+<span style="color: #bdbc61;">"grapes"</span>
+iex(5)&gt; kale
+<span style="color: #bdbc61;">"kale"</span>
+</pre>
+</div>
+</section>
+<section >
+<div class="org-src-container">
+
+<pre  class="src src-elixir">iex(8)&gt; <span style="color: #baba36;">shopping_list</span> = [<span style="color: #bdbc61;">"apples"</span>, <span style="color: #bdbc61;">"grapes"</span>, <span style="color: #bdbc61;">"kale"</span>]
+[<span style="color: #bdbc61;">"apples"</span>, <span style="color: #bdbc61;">"grapes"</span>, <span style="color: #bdbc61;">"kale"</span>]
+iex(9)&gt; [h | t] = shopping_list
+[<span style="color: #bdbc61;">"apples"</span>, <span style="color: #bdbc61;">"grapes"</span>, <span style="color: #bdbc61;">"kale"</span>]
+iex(10)&gt; h
+<span style="color: #bdbc61;">"apples"</span>
+iex(11)&gt; t
+[<span style="color: #bdbc61;">"grapes"</span>, <span style="color: #bdbc61;">"kale"</span>]
+</pre>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-org83afbb7">
+<h2 id="org83afbb7">Control</h2>
+<div class="outline-text-2" id="text-org83afbb7">
+</div></section>
+<section id="slide-org0c29ef5">
+<h3 id="org0c29ef5"><code>if</code>, <code>unless</code></h3>
+<div class="org-src-container">
+
+<pre  class="src src-elixir">iex(1)&gt; <span style="color: #5180b3;">if</span> <span style="color: #cd5542;">String</span>.valid?(<span style="color: #bdbc61;">"Hello"</span>) <span style="color: #5180b3;">do</span>
+...(1)&gt;   <span style="color: #bdbc61;">"Valid String"</span>
+...(1)&gt; <span style="color: #5180b3;">else</span>
+...(1)&gt;   <span style="color: #bdbc61;">"Invalid String"</span>
+...(1)&gt; <span style="color: #5180b3;">end</span>
+<span style="color: #bdbc61;">"Valid String"</span>
+iex(2)&gt; <span style="color: #5180b3;">if</span> <span style="color: #bdbc61;">"a string value"</span> <span style="color: #5180b3;">do</span>
+...(2)&gt;   <span style="color: #bdbc61;">"Truthy"</span>
+...(2)&gt; <span style="color: #5180b3;">end</span>
+<span style="color: #bdbc61;">"Truthy"</span>
+iex(3)&gt; <span style="color: #5180b3;">unless</span> is_integer(<span style="color: #bdbc61;">"hello"</span>) <span style="color: #5180b3;">do</span>
+...(3)&gt;   <span style="color: #bdbc61;">"Not an Int"</span>
+...(3)&gt; <span style="color: #5180b3;">end</span>
+<span style="color: #bdbc61;">"Not an Int"</span>
+</pre>
+</div>
+</section>
+<section id="slide-orga83acaa">
+<h3 id="orga83acaa"><code>case</code> by <code>case</code> basis</h3>
+<div class="org-src-container">
+
+<pre  class="src src-elixir">iex(1)&gt; <span style="color: #5180b3;">case</span> {<span style="color: #87cefa;">:ok</span>, <span style="color: #bdbc61;">"Hello world"</span>} <span style="color: #5180b3;">do</span>
+...(1)&gt;   {<span style="color: #87cefa;">:ok</span>, result} -&gt; result
+...(1)&gt;   {<span style="color: #87cefa;">:error</span>}      -&gt; <span style="color: #bdbc61;">"Uh oh!"</span>
+...(1)&gt;   <span style="color: #ab75c3;">_</span>             -&gt; <span style="color: #bdbc61;">"Catch all"</span>
+...(1)&gt; <span style="color: #5180b3;">end</span>
+<span style="color: #bdbc61;">"Hello world"</span>
+</pre>
+</div>
+</section>
+<section id="slide-org1cd5c03">
+<h3 id="org1cd5c03">Pins</h3>
+<div class="org-src-container">
+
+<pre  class="src src-elixir">iex(1)&gt; <span style="color: #baba36;">pie</span> = 3.14
+iex(2)&gt; <span style="color: #5180b3;">case</span> <span style="color: #bdbc61;">"cherry pie"</span> <span style="color: #5180b3;">do</span>
+...(2)&gt;  ^pie -&gt; <span style="color: #bdbc61;">"Not so tasty"</span>
+...(2)&gt;  pie -&gt; <span style="color: #bdbc61;">"I bet </span><span style="color: #baba36;">#{pie}</span><span style="color: #bdbc61;"> is tasty"</span>
+...(2)&gt; <span style="color: #5180b3;">end</span>
+<span style="color: #bdbc61;">"I bet cherry pie is tasty"</span>
+</pre>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-org00afb5b">
+<h2 id="org00afb5b">Functions</h2>
+<div class="outline-text-2" id="text-org00afb5b">
+</div></section>
+<section id="slide-org362b415">
+<h3 id="org362b415">Anonymous Functions</h3>
+<div class="org-src-container">
+
+<pre  class="src src-elixir">iex(1)&gt; <span style="color: #baba36;">sum</span> = <span style="color: #5180b3;">fn</span> (a, b) -&gt; a + b <span style="color: #5180b3;">end</span>
+<span style="color: #656565;">#</span><span style="color: #757575;">Function&lt;12.52032458/2 in :erl_eval.expr/5&gt;</span>
+iex(2)&gt; sum.(2, 3)
+5
+iex(3)&gt; <span style="color: #baba36;">sum</span> = &amp;(&amp;1 + &amp;2)
+&amp;:erlang.+/2
+iex(4)&gt; sum.(2, 3)
+5
+</pre>
+</div>
+</section>
+<section id="slide-orgb949361">
+<h3 id="orgb949361">Endless Possiblities</h3>
+<div class="org-src-container">
+
+<pre  class="src src-elixir">iex(1)&gt; <span style="color: #baba36;">handle_result</span> = <span style="color: #5180b3;">fn</span>
+...(1)&gt;   {<span style="color: #87cefa;">:ok</span>, result} -&gt; <span style="color: #cd5542;">IO</span>.puts <span style="color: #bdbc61;">"Handling result..."</span>
+...(1)&gt;   {<span style="color: #87cefa;">:error</span>}      -&gt; <span style="color: #cd5542;">IO</span>.puts <span style="color: #bdbc61;">"An error has occurred!"</span>
+...(1)&gt; <span style="color: #5180b3;">end</span>
+<span style="color: #656565;">#</span><span style="color: #757575;">Function&lt;6.52032458/1 in :erl_eval.expr/5&gt;</span>
+iex(2)&gt; <span style="color: #baba36;">some_result</span> = 1
+1
+iex(3)&gt; handle_result.({<span style="color: #87cefa;">:ok</span>, some_result})
+<span style="color: #cd5542;">Handling</span> result...
+
+iex(4)&gt; handle_result.({<span style="color: #87cefa;">:error</span>})
+<span style="color: #cd5542;">An</span> error has occurred!
+</pre>
+</div>
+</section>
+<section id="slide-orgf9725d5">
+<h3 id="orgf9725d5">Named Functions</h3>
+<div class="org-src-container">
+
+<pre  class="src src-elixir"><span style="color: #656565;"># </span><span style="color: #757575;">All named functions must belong to a module</span>
+<span style="color: #5180b3;">defmodule</span> <span style="color: #cd5542;">Greeter</span> <span style="color: #5180b3;">do</span>
+  <span style="color: #5180b3;">def</span> <span style="color: #6aaf50;">hello</span>(name) <span style="color: #5180b3;">do</span>
+    <span style="color: #bdbc61;">"Hello, "</span> &lt;&gt; name
+  <span style="color: #5180b3;">end</span>
+<span style="color: #5180b3;">end</span>
+
+iex(1)&gt; <span style="color: #cd5542;">Greeter</span>.hello(<span style="color: #bdbc61;">"Taylor"</span>)
+<span style="color: #bdbc61;">"Hello, Taylor"</span>
+</pre>
+</div>
+</section>
+<section >
+<div class="org-src-container">
+
+<pre  class="src src-elixir"><span style="color: #656565;"># </span><span style="color: #757575;">One line functions have a shorter syntax</span>
+<span style="color: #5180b3;">defmodule</span> <span style="color: #cd5542;">Greeter</span> <span style="color: #5180b3;">do</span>
+  <span style="color: #5180b3;">def</span> <span style="color: #6aaf50;">hello</span>(name), <span style="color: #87cefa;">do:</span> <span style="color: #bdbc61;">"Hello, "</span> &lt;&gt; name
+<span style="color: #5180b3;">end</span>
+</pre>
+</div>
+</section>
+<section id="slide-orgdb7085f">
+<h3 id="orgdb7085f">Recursion</h3>
+<div class="org-src-container">
+
+<pre  class="src src-elixir"><span style="color: #5180b3;">defmodule</span> <span style="color: #cd5542;">Length</span> <span style="color: #5180b3;">do</span>
+  <span style="color: #5180b3;">def</span> <span style="color: #6aaf50;">of</span>([]), <span style="color: #87cefa;">do:</span> 0
+  <span style="color: #5180b3;">def</span> <span style="color: #6aaf50;">of</span>([<span style="color: #757575;">_h</span> | t]), <span style="color: #87cefa;">do:</span> 1 + of(t)
+<span style="color: #5180b3;">end</span>
+
+iex&gt; <span style="color: #cd5542;">Length</span>.of([])
+0
+iex&gt; <span style="color: #cd5542;">Length</span>.of([1, 2, 3])
+3
+</pre>
+</div>
+</section>
+<section >
+<p>
+<code>Length.of([1, 2, 3])</code>
+</p>
+<p class="fragment (appear)">
+<code>1 + of([2, 3])</code>
+</p>
+<p class="fragment (appear)">
+<code>1 + (1 + of([3]))</code>
+</p>
+<p class="fragment (appear)">
+<code>1 + (1 + (1 + of([])))</code>
+</p>
+<p class="fragment (appear)">
+<code>1 + (1 + (1 + (0)))</code>
+</p>
+<p class="fragment (appear)">
+<code>3</code>
+</p>
+</section>
+<section id="slide-orgbc35a2c">
+<h3 id="orgbc35a2c">Arity</h3>
+<div class="org-src-container">
+
+<pre  class="src src-elixir"><span style="color: #5180b3;">defmodule</span> <span style="color: #cd5542;">Greeter2</span> <span style="color: #5180b3;">do</span>
+  <span style="color: #656565;"># </span><span style="color: #757575;">hello/0</span>
+  <span style="color: #5180b3;">def</span> <span style="color: #6aaf50;">hello</span>(), <span style="color: #87cefa;">do:</span> <span style="color: #bdbc61;">"Hello, anonymous person!"</span>
+  <span style="color: #656565;"># </span><span style="color: #757575;">hello/1</span>
+  <span style="color: #5180b3;">def</span> <span style="color: #6aaf50;">hello</span>(name), <span style="color: #87cefa;">do:</span> <span style="color: #bdbc61;">"Hello, "</span> &lt;&gt; name
+  <span style="color: #656565;"># </span><span style="color: #757575;">hello/2</span>
+  <span style="color: #5180b3;">def</span> <span style="color: #6aaf50;">hello</span>(name1, name2), <span style="color: #87cefa;">do:</span> <span style="color: #bdbc61;">"Hello, </span><span style="color: #baba36;">#{name1}</span><span style="color: #bdbc61;"> and </span><span style="color: #baba36;">#{name2}</span><span style="color: #bdbc61;">"</span>
+<span style="color: #5180b3;">end</span>
+</pre>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-orgf4aca45">
+<h2 id="orgf4aca45">References</h2>
+<ul>
+<li>Examples taken from <a href="https://elixirschool.com">https://elixirschool.com</a></li>
+<li><a href="http://elixir-lang.org/">http://elixir-lang.org/</a></li>
+<li><a href="http://www.phoenixframework.org/">http://www.phoenixframework.org/</a></li>
+<li><a href="http://elixirkoans.io/">http://elixirkoans.io/</a></li>
+
+</ul>
+</section>
+</section>
+</div>
+</div>
+<script src="http://cdn.jsdelivr.net/reveal.js/3.0.0/lib/js/head.min.js"></script>
+<script src="http://cdn.jsdelivr.net/reveal.js/3.0.0/js/reveal.js"></script>
+
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: false,
+center: true,
+slideNumber: 'c',
+rollingLinks: false,
+keyboard: true,
+overview: true,
+margin: 0.20,
+
+theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+transitionSpeed: 'default',
+multiplex: {
+    secret: '', // null if client
+    id: '', // id, obtained from socket.io server
+    url: '' // Location of socket.io server
+},
+
+// Optional libraries used to extend on reveal.js
+dependencies: [
+ { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+ { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: 'http://cdn.jsdelivr.net/reveal.js/3.0.0/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }]
+});
+</script>
+</body>
+</html>
