@@ -1,0 +1,16 @@
+<!doctype html>
+<html>
+  <body onload='brython()'>
+    <script src='brython.js'></script>
+    <script src='brython_stdlib.js'></script>
+    <button id='hello_button'>Click me!</button>
+    <script type='text/python'>
+from browser import document, alert
+from random import randint
+def hello(event):
+    alert(randint(0,100))
+
+document['hello_button'].bind('click', hello)
+    </script>
+  </body>
+</html>
