@@ -95,6 +95,11 @@ print(f'the answer is {number}')
 
 # Dictionary
 ages = {'alice': 23, 'bob': 12, 'frank': 66}
+print(ages['alice'])
+ages[3] = True
+print(ages)
+ages['bob'] += 1
+print(ages)
 
 
 # Functions
