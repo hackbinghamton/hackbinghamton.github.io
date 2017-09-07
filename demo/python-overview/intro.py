@@ -101,6 +101,13 @@ print(ages)
 ages['bob'] += 1
 print(ages)
 
+# loop over dictionary
+for key in ages:
+    print(key)
+
+for key, value in ages.items():
+    print(key, value)
+
 
 # Functions
 def square(x):
