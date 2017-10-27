@@ -1,3 +1,5 @@
+# This example users python3.6
+
 # Hello world
 print('Hello, world!')
 
@@ -39,7 +41,8 @@ print(three == 3)
 helloworld = 'hello' + ' ' + 'world'
 print(helloworld)
 
-print(one + helloworld)
+# can't add integers and strings
+# print(one + helloworld)
 
 
 # Lists
@@ -53,7 +56,7 @@ print(mylist[0])
 print(mylist[1])
 print(mylist[2])
 
-print(mylist[3]) # IndexError
+#print(mylist[3]) # IndexError
 
 print(len(mylist))
 
@@ -91,7 +94,7 @@ print([1, 2, 3] * 3)
 
 # Formatting Strings
 answer = 42
-print(f'the answer is {number}')
+print(f'the answer is {answer}')
 
 # Dictionary
 ages = {'alice': 23, 'bob': 12, 'frank': 66}
@@ -133,3 +136,27 @@ x = 10
 while x > 0:
     print(x)
     x -= 1
+
+# Comprehensions
+
+# make a new list by transforming an old one
+oldlist = [1, 2, 3, 4, 5]
+squaredlist = []
+for x in oldlist:
+    squaredlist.append(x ** 2)
+
+print(squaredlist)
+
+
+newlist = [x ** 2 for x in oldlist]
+print(newlist)
+
+
+# build a dictionary from list items
+oldlist = [1, 2, 3, 4, 5]
+mydict = {}
+for x in oldlist:
+    mydict[x] = x ** 2
+
+mydict = {x: x ** 2 for x in oldlist}
+
