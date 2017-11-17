@@ -150,10 +150,12 @@ def example_9():
     <_sre.SRE_Match object; span=(4, 7), match='abc'>
     <_sre.SRE_Match object; span=(4, 6), match='ac'>
     '''
-    regex = re.compile(r'ab?c')
+    regex = re.compile(r'abb?c')
     result1 = regex.search('____abc____')
+    result3 = regex.search('____abbc____')
     result2 = regex.search('____ac_____')
     print(result1)
+    print(result3)
     print(result2)
 
 
@@ -224,7 +226,7 @@ def example_13():
     >>> example_13()
     <_sre.SRE_Match object; span=(0, 15), match='The quick brown'>
     '''
-    regex = re.compile('[\w ]+(?=\sfox)')
+    regex = re.compile(r'[\w ]+(?=\sfox)')
     result = regex.search('The quick brown fox')
     print(result)
 
@@ -234,6 +236,6 @@ def example_14():
     >>> example_14()
     <_sre.SRE_Match object; span=(7, 15), match='Workshop'>
     '''
-    regex = re.compile('(?<=HackBU )\w+')
+    regex = re.compile(r'(?<=HackBU )\w+')
     result = regex.search('HackBU Workshop')
     print(result)
