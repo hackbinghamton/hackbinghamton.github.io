@@ -45,13 +45,4 @@ layout: default
 	<h3 class="article-title">Still have questions?</h3>
     <p>Shoot us an email (<a href="mailto:hello@hackbu.org">hello@hackbu.org</a>), <a href="https://www.facebook.com/HackBinghamton" title="HackBU on Facebook">ask us on Facebook</a>, join our <a href="https://www.linkedin.com/groups/8427110">group on LinkedIn</a>, or <a href="https://twitter.com/HackBinghamton" title="HackBU on Twitter">reach out on Twitter</a>.</p>
 </div>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-117545479-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-117545479-1');
-</script>
 
