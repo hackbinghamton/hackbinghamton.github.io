@@ -42,7 +42,7 @@
 			{% assign og_image = site.og_image %}
 		{% endif %}
 		<meta property="og:image" content="{{ og_image }}">
-<meta name="google-site-verification" content="8pkyZiltIOIW2XJNnBcPeWK8qs5dLwSZDicf5nPW-fw" />
+
 		<meta property="og:url" content="{{ site.root }}{{ page.url | replace: 'index.html', '' }}">
 
 		{% include head.html %}
