@@ -1,0 +1,25 @@
+body{
+	color : #414141;
+	background-color : #EEEEEE;
+	font-family: "Helvetica", "Arial", sans-serif;
+}
+
+h1, h2 {
+	font-family: "Comic Sans"
+}
+
+ul {
+	list-style-type: circle;
+}
+
+ol.list_cris{
+	list-style-type: lower-roman;
+}
+
+ol {
+	list-style-type: lower-greek;
+}
+
+p {
+	text-align: right;
+}
