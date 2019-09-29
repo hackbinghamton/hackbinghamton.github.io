@@ -7,3 +7,4 @@ safe: true
 lsi: false
 highlighter: rouge
 markdown: kramdown
+url: https://club.hackbu.org
