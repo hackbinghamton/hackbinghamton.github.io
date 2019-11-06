@@ -13,7 +13,7 @@ Created by:
 * Itai Ferber '16
 * Jules Forrest '14
 
-Current members:
+Past members:
 * Erik Langert '17
 * Jack Fischer '17
 * Tim Hung '18
@@ -35,4 +35,3 @@ Created with:
 * git
 * GitHub
 * normalize.css
-
