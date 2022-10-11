@@ -1,0 +1,13 @@
+{% if include.person.pos %}
+  <strong>{{ include.person.pos }}:</strong>
+{% endif %}
+
+{% if include.person.email %}
+  <a href="mailto: {{ include.person.email }}" style="text-decoration:none">
+{% endif %}
+{{ include.person.name }}
+{% if include.person.email %}
+  </a>
+{% endif %}
+
+({{ include.person.pronouns }})
