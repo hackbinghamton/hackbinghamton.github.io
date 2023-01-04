@@ -6,15 +6,15 @@
 
 {% if include.source == "blog_home" %}
 	<h2>
+	<a href="{{ post.url }}">
 {% else %}
 	<h1>
 {% endif %}
-<a href="{{ post.url }}">
 	{{ include.post.title }}
-</a>
 {% if include.source == "blog_home" %}
 	</h2>
 {% else %}
+	</a>
 	</h1>
 {% endif %}
 
