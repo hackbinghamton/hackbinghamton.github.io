@@ -1,0 +1,28 @@
+<style>
+	h1, h2 {
+		margin-bottom: 0;
+	}
+</style>
+
+{% if include.source == "blog_home" %}
+	<h2>
+{% else %}
+	<h1>
+{% endif %}
+<a href="{{ post.url }}">
+	{{ include.post.title }}
+</a>
+{% if include.source == "blog_home" %}
+	</h2>
+{% else %}
+	</h1>
+{% endif %}
+
+<div class="byline">
+	<address>
+		Written by <a rel="author" href="{{ include.post.author_site }}">{{ include.post.author }}</a>
+	</address>
+	<p style="margin-top: 0;">
+		<i>Published <time datetime="{{ include.post.date | date: '%Y-%m-%d'}}"">on {{ include.post.date | date: "%B %d, %Y" }}</time></i>
+	</p>
+</div>

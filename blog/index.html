@@ -1,0 +1,19 @@
+---
+title: Blog
+layout: default
+---
+
+<h1>
+	<i class="fa fa-align-left"></i>
+	HackBU Blog
+</h1>
+
+<p>
+	Welcome to our blog! This is where we will be putting some of our larger announcements, and perhaps more types of articles in the future.
+</p>
+
+{% for post in site.categories.blog %}
+	{% include blog-header.html post=post source="blog_home" %}
+	{{ post.excerpt }}
+	<i><a href="{{ post.url }}">Read more…</a></i>
+{% endfor %}

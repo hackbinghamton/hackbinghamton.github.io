@@ -90,7 +90,9 @@ textarea {
 @border-color: #2a3134;
 @green: #006a4e;
 
-*, *:before, *:after {
+*,
+*:before,
+*:after {
 	-moz-box-sizing: border-box;
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
@@ -120,7 +122,8 @@ table {
 	overflow-x: auto;
 }
 
-tbody, thead {
+tbody,
+thead {
 	width: auto;
 }
 
@@ -146,7 +149,8 @@ th {
 
 tr:nth-child(even) {}
 
-th, td {
+th,
+td {
 	border: 1px solid #eee;
 	padding: 0.5em 1em;
 
@@ -282,7 +286,7 @@ th, td {
 	list-style: none;
 	margin: 2em 0;
 	padding: 0;
-	
+
 	a {
 		display: block;
 		padding: 0.3em @sidebar-left-padding;
@@ -429,6 +433,25 @@ th, td {
 	&:hover {
 		background: #11765c;
 	}
+}
+
+/*==============*/
+/*=== Blog ===*/
+/*==============*/
+
+.note {
+	width: 100%;
+	border-width: 2px;
+	border-color: #159170;
+	border-radius: 10px;
+	border-style: solid;
+	display: inline-block;
+	margin: 0;
+	padding: 0.5em;
+}
+
+.note>ul {
+	margin: 0.25em 0;
 }
 
 /*==============*/
@@ -653,8 +676,10 @@ th, td {
 
 .clearfix:before,
 .clearfix:after {
-	content: " "; /* 1 */
-	display: table; /* 2 */
+	content: " ";
+	/* 1 */
+	display: table;
+	/* 2 */
 }
 
 .clearfix:after {
