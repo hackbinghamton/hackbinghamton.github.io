@@ -7,3 +7,9 @@ safe: true
 lsi: false
 highlighter: rouge
 markdown: kramdown
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      excerpt_separator: "<!--more-->"
