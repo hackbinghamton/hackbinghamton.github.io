@@ -18,7 +18,7 @@ If you would like to learn more, please visit [the HackBU 2023 website](https://
 <div class="note">
   <ul>
     <li>
-      <b>Alumni and Sponsors</b>: If you are interested being a part of our mentorship event during the hackathon, please fill out <a href="https://docs.google.com/forms/d/e/1FAIpQLSdsfWBeCTEGD_w57oQI3FDa4lGQhnNJzbhVVHvHcT2HMJoa3A/viewform?usp=sf_link">this form</a>!
+      <b>Alumni and Sponsors</b>: If you are interested being a part of our mentorship event during the hackathon, please fill out <a href="https://docs.google.com/forms/d/e/1FAIpQLSdsfWBeCTEGD_w57oQI3FDa4lGQhnNJzbhVVHvHcT2HMJoa3A/viewform?usp=sf_link">this form</a>! We will be hosting a Mentor Match session where we give mentors time to connect with our mentees and give them advice for the hackathon and beyond.
     </li>
     <li>
       <b>Companies and Organizations</b>: If you are interested in sponsoring this event, please see our <a href="https://hackbu.org/2023/sponsorship_packet.pdf">sponsorship packet</a>. To discuss it further, please reach out to our Vice President of Outreach, <a href="mailto:jmaiolo1@binghamton.edu">Julia Maiolo</a>.
