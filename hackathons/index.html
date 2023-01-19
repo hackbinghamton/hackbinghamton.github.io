@@ -7,12 +7,12 @@ description: Attend hackathons with HackBU or learn more about the hackathon at 
 <div class="article article-introduction">
 	<h2><i class="fa fa-keyboard-o"></i>Hackathons</h2>
 	<p>Hackathons are events where "hackers" come together in teams with the intention of creating the best type of program (i.e. web app, iPhone app, etc.) or hardware project within a certain period of time. Most hackathons last between 24-48 hours and are full of caffeine, food, prizes, and little sleep.</p>
+	<p>Here is the latest news about our own hackathon:</p>
 </div>
 <div class="article">
-	<h3>HackBU Hackathon</h3>
-	<!-- <p>HackBU will host its eigth annual hackathon virtually on our <a href="https://discord.gg/Xka5uUh">discord server</a> in Spring 2021 from February 6th-7th.</p>
-	<p>Learn more at <a href="http://hackbu.org/2021s/">hackbu.org/2021s</a>!</p> -->
-    <p>HackBU's next hackathon will be announced at a later date.</p>
+	{% assign page = site.categories.blog | where: "tags", "hackathon" | first %}
+	{% include blog-header.html post=page source="blog_post" %}
+	{{ page.content }}
 </div>
 
 </div>

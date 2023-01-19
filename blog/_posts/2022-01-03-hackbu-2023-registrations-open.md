@@ -3,6 +3,7 @@ title: HackBU 2023 registrations are now open!
 layout: "blog-post"
 author: Lucy Loerker
 author_contact: mailto:lucy@hackbu.org
+tags: hackathon
 ---
 
 On behalf of the HackBU team, I am excited to announce that [signups for the HackBU 2023 hackathon](https://docs.google.com/forms/d/1GANiL5gH3OvpN1NBtq7epuL2RSFfitVxYH351ByBfu0/edit) are now open! This event will take place on **February 4th-5th, in-person at Binghamton University's Innovative Technology Complex**. If you are interested, regular registration will close at midnight on Sunday, January 22nd.
