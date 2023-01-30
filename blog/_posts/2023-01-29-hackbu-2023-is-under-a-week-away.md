@@ -18,14 +18,14 @@ The event locations given on that schedule are all rooms within the [Innovative 
 
 ![ITC Map Preview](/img/blog/itc_map_preview.png){: width="100%" }
 
-To transport people to and from the ITC building, we are chartering [OCCT](https://www.occtransport.org/). For two hours at the beginning and end of the event, we will be running a shuttle in a loop from the University Union to the ITC; see the schedule for details. The shuttle will not be running during Saturday night; though attendees are welcome to sleep in our designated Quiet Room at the time (see the schedule), you are urged to take care of your personal hygeine by revisiting your room for a quick shower. There aren't any real restrictions on when you need to be at ITC; you just want to check-in on time and be around for judging to be eligible for prizes.
+To transport people to and from the ITC building, we are chartering [OCCT](https://www.occtransport.org/). For two hours at the beginning and end of the event, we will be running a shuttle in a loop from the University Union to the ITC; see the schedule for details. The shuttle will not be running during Saturday night; though attendees are welcome to sleep in our designated Quiet Room at the time (see the schedule), you are urged to take care of your personal hygiene by revisiting your room for a quick shower. There aren't any real restrictions on when you need to be at ITC; you just want to check-in by 1PM and be around for judging to be eligible for prizes.
 
 ## Late Registration
 
 As far as late registration goes, we have settled on a policy. We will be re-opening registration (with a different Google Form link) tomorrow, Tuesday 1/31, at 12PM. We urge attendees to register as soon as possible, so that we can prepare accordingly. **Late registrants must be aware of the following**: If we exceed our initial approximate headcount, then then people who register after a certain cut-off:
 
 - May have a different meal than regular registrants.
-- Will not receive swag until a later date after event.
+- Will not receive swag until a later date after the event.
 
 The sooner you register, the more likely you are to be prioritized for swag; however, we will make sure that everybody does have a meal.
 
@@ -43,7 +43,7 @@ We are not ready to publish the hackathon to DevPost, but since people have aske
 - Best Design (UI), sponsored by [RubyLaw](https://www.rubylaw.com/)
 - Best Geo Hack, sponsored by [CAE](https://www.cae.com/)
 
-We have also allocated resources for these prizes, which could change before the hackathon:
+We have also allocated resources for these categories, which could change before the hackathon:
 - Funniest Hack
 - Best Security Hack
 - Best Building a Better Future Hack
