@@ -7,6 +7,10 @@ safe: true
 lsi: false
 highlighter: rouge
 markdown: kramdown
+plugins:
+  - jekyll-redirect-from
+whitelist:
+  - jekyll-redirect-from
 defaults:
   - scope:
       path: ""
