@@ -12,7 +12,7 @@ Hi all! As HackBU 2023 approaches, I want to provide you all with more details a
 
 ## Schedule and Location
 
-The schedule for the hackathon has been published at https://hackbu.org/2023/schedule. Though some event locations are pending, the times are finalized. Any last-minute changes (i.e. due to delays on the day-of) will be published to our [Discord server](/discord). All participants, judges, and sponsors should join the Discord server to stay up-to-date.
+The schedule for the hackathon has been published at [https://hackbu.org/2023/schedule](https://hackbu.org/2023/schedule). Though some event locations are pending, the times are finalized. Any last-minute changes (i.e. due to delays on the day-of) will be published to our [Discord server](/discord). All participants, judges, and sponsors should join the Discord server to stay up-to-date.
 
 The event locations given on that schedule are all rooms within the [Innovative Technology Complex](https://goo.gl/maps/YvZFvfeiAe17bU5x5) (ITC). If they're all unfamiliar right now, don't worry! We have been working to come up with a map to help everyone get around. Here's a sneak peak:
 
