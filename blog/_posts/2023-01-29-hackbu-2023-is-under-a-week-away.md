@@ -22,7 +22,7 @@ To transport people to and from the ITC building, we are chartering [OCCT](https
 
 ## Late Registration
 
-As far as late registration goes, we have settled on a policy. We will be re-opening registration (with a different Google Form link) tomorrow, Tuesday 1/31, at 12PM. We urge attendees to register as soon as possible, so that we can prepare accordingly. **Late registrants must be aware of the following**: If we exceed our initial approximate headcount, then then people who register after a certain cut-off:
+If you have not yet registered for the hackathon, you can check if our [Late Registration](https://docs.google.com/forms/d/e/1FAIpQLScHJPwdIMSuiyTgqGrdeo_ZX6j0pJJGhgs9NtS1wLniXYDc9g/viewform) form is still up. We urge attendees to register as soon as possible, so that we can prepare accordingly. **Late registrants must be aware of the following**: If we exceed our initial approximate headcount, then then people who register after a certain cut-off:
 
 - May have a different meal than regular registrants.
 - Will not receive swag until a later date after the event.
