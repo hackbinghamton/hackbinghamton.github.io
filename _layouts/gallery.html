@@ -1,0 +1,26 @@
+---
+layout: default
+custom_css:
+  - css/simple-lightbox.css
+custom_js:
+  - js/vendor/simple-lightbox.min.js
+---
+
+<h1>{{ page.title }}</h1>
+
+{{ content }}
+
+<div class="gallery">
+    {% for image in page.images %}
+      <a class="box" href="/img/{{ image.image_path }}">
+        <img src="/img/thumb/{{ image.image_path }}" alt="{{ image.title }}"/>
+      </a>
+    {% endfor %}
+</div>
+
+<script>
+  var lightbox = new SimpleLightbox('.gallery a', { 
+    captionsData: 'alt',
+    animationSpeed: 100
+   });
+</script>

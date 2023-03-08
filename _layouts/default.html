@@ -53,6 +53,18 @@
 		<meta property="og:url" content="{{ site.root }}{{ page.url | replace: 'index.html', '' }}">
 
 		{% include head.html %}
+
+		{% if layout.custom_js %}
+			{% for js_file in layout.custom_js %}
+				<script type="text/javascript" src="{{ site.dest }}/{{ js_file }}"></script>
+			{% endfor %}
+		{% endif %}
+
+		{% if layout.custom_css %}
+			{% for css_file in layout.custom_css %}
+				<link rel="stylesheet" href="{{ site.dest }}/{{ css_file }}">
+			{% endfor %}
+		{% endif %}
 	</head>
 	<body class="{{ page.class }}">
 		{% include header.html %}

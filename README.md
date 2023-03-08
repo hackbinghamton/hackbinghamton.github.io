@@ -20,6 +20,13 @@ Making a change to the website? Fork the repository (if you're not HackBU staff)
 
 A HackBU staff member will review the pull request, leave comments, and decide whether or not to merge.
 
+
+Producing thumbnails for the photo galleries:
+
+```
+$ magick mogrify -resize 300x300^ -gravity Center -extent 300x300  -path $PATH_TO_THUMB_DIR *.jpg
+```
+
 ## License
 
 The contents of this repository are [released under the MIT License](http://hackbu.org/LICENSE).
