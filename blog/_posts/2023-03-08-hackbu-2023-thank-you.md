@@ -41,6 +41,7 @@ That's not all, though! In addition to our [Twitter](https://twitter.com/hackbin
 
 Myself, I am over the moon with how the event itself went. It took a lot of work to get this event running in-person again, and there were certainly a lot of time crunches. We've been putting a lot of time and effort into one-time investments which will serve us will in the future, such as:
 
+- This blog! If you're reading this far down, seems like it's working a little bit :D
 - The [ITC map](https://hackbu.org/2023/handout.pdf) - this was my pet project for a few weeks; this was drawn from scratch in [Inkscape](https://inkscape.org/). I started by tracing over the building, and then drawing in the specific rooms.
 - The [hackathon schedule](https://hackbu.org/2023/schedule). Past hackathon years *have* had a schedule on the site, but 2022 needed to have support added.
 - Our [resume-book building tools](https://github.com/HackBinghamton/resume-tools), for our sponsors. Who doesn't like an excuse to do some shell scripting ;)
