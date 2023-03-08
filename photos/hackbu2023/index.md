@@ -114,6 +114,6 @@ images:
 
 Here are some of our favorite moments of HackBU 2023, captured on photo.
 
-We thank University Photographer Jonathan Cohen for capturing many of the photographs of our opening ceremonies; these photos have `jwc` in the URL.
+We thank University Photographer Jonathan Cohen for capturing many of the photographs of our opening ceremony; these photos have `jwc` in the URL.
 
 If you have any photos of your own that you would like to submit to this page (including fun ones for the end!), feel free to email them to [hello@hackbu.org](mailto:hello@hackbu.org?Subject=HackBU 2023 Photo Submission) with the subject line `HackBU 2023 Photo Submission` for consideration.
