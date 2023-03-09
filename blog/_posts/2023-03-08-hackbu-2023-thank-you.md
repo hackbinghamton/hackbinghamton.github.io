@@ -12,13 +12,13 @@ Hi all! I have some updates to share about HackBU 2023 pertaining to winners, re
 
 ## Winners
 
-I would like to start off with an important announcement about our hackathon winners: After our event ended, we found that one of our selected winning projects violated [our rules](https://hackbu2023.devpost.com/rules) by reusing a significant amount of code created before the hackathon. Having clarified this with the original author, we would like to congratulate a couple of new winners!
+I would like to start off with an important announcement about our hackathon winners: After our event ended, we found that one of our selected winning projects violated [our rules](https://hackbu2023.devpost.com/rules) by reusing a significant amount of code created before the hackathon. Having clarified this with the original authors, we would like to congratulate a couple of new winners!
 
 Firstly, our new winner for **Best Newbie Hack** is [DineTunes!](https://devpost.com/software/dinetunes) by [Nicholas Solar](https://www.linkedin.com/in/nsolar/), [Bryan Perez](https://www.linkedin.com/in/-bryanperez/), [Luke Sypniewski](https://www.linkedin.com/in/lsypniewski/), and [David Lovejoy](https://www.linkedin.com/in/david-lovejoy-5b8a3b260/)! **DineTunes!** is a website designed to make dining halls more engaging for students by providing an interface for users to *like* and *dislike* songs.
 
 ![DineTunes! screenshot](/img/blog/dinetunes.png){: width="100%" }
 
-Next, our new winner for **Best Design (UI)** is [Valenteer](https://devpost.com/software/valenteer) by [Vivian Huynh](https://www.linkedin.com/in/vivianhuynh3/), [Winnie Yong](https://www.linkedin.com/in/winyong/), [Haohua Zeng](https://www.linkedin.com/in/haohua-zeng/), and [Sara Wu](https://www.linkedin.com/in/sara-wu-856182166/)! **Valenteer** is a service for discovering local volunteer opportunities, and matching you up with like-minded individuals to build connections with. Valenteer's authors. It supports finding other users who go to the same events as you, and inputting your interests to get better matches.
+Next, our new winner for **Best Design (UI)** is [Valenteer](https://devpost.com/software/valenteer) by [Vivian Huynh](https://www.linkedin.com/in/vivianhuynh3/), [Winnie Yong](https://www.linkedin.com/in/winyong/), [Haohua Zeng](https://www.linkedin.com/in/haohua-zeng/), and [Sara Wu](https://www.linkedin.com/in/sara-wu-856182166/)! **Valenteer** is a service for discovering local volunteer opportunities, and matching you up with like-minded individuals to build connections with. It supports finding other users who go to the same events as you, and inputting your interests to get better matches.
 
 ![Valenteer screenshot 1](/img/blog/valenteer1.jpg){: width="45%" }
 ![Valenteer screenshot 2](/img/blog/valenteer2.jpg){: width="45%" }
@@ -55,8 +55,8 @@ We also tried some new things this year, during the hackathon:
 But, you likely already know about those. Let's talk improvement!
 
 - By far, our biggest commitment for next year will be improving the judging process. We will be pursuing the following major improvements:
-  - Make the open expo feel more organic. We will spread the tables apart more (spilling out of the rotunda), so that teams have room to breahte.
-  - Investigate a better way to distribute and record scores. We are aware that some teams were visited much more than others; this was caused by a mix of not having enough judges, but also not having an infrastructure to easily distribute tasks.
+  - Make the open expo feel more organic. We will spread the tables apart more (spilling out of the rotunda), so that teams have room to breathe.
+  - Investigate a better way to distribute and record scores. We are aware that some teams were visited much more than others; this was caused partially by not having enough judges, but also not having an infrastructure to easily distribute tasks.
 - Overall, we should be able to more quickly deliver updates now that our team has this experience under our belts, and we can more accurately determine how much time we need for different stages of hackathon planning.
 - We will expand our mentor match program by increasing outreach to our alumni. We didn't have much bandwidth for this, this year, but I will make sure that we have ample resources allocated to this next time.
 - We will consider changes to times and places where they make more sense; for instance, we will likely move the team-building session to take place right after opening ceremony so that nobody has to wait around.
