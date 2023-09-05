@@ -29,7 +29,7 @@ SIG is a global quantitative trading firm founded by a group of friends who shar
 
 ## Q & A
 
-*The registration is asking me for a resume; what if I don't have one ready?*
+<q>The registration is asking me for a resume; what if I don't have one ready?</q>
 
 Don't fret! Our friends over at Binghamton ACM are having a **Resume Workshop** on <time datetime="2023-09-07T19:30">this Thursday at 7:30</time> in Classroom Wing 202.
 
@@ -37,14 +37,14 @@ We also have a resume channel in [our Discord server](/discord) that you can get
 
 You will be needing to make a resume at some point anyways—be it for CS101, CS301, or applying to internships—so it's really helpful to get a start on it, even if it's daunting :)
 
-*I'm not super confident in my technical interview skills; is this event for me?*
+<q>I'm not super confident in my technical interview skills; is this event for me?</q>
 
 Yes! This event is perfect for anyone looking to get their feet wet in thinking critically about interview questions. All you need is to be comfortable with writing code in a language of your choice.
 
-*I have a class ending at 6:05; can I still come?*
+<q>I have a class ending at 6:05; can I still come?</q>
 
 Sure! If you are just getting out of class, it's fine if you arrive a little late.
 
-*Where is the Nelson A. Rockefeller Center?*
+<q>Where is the Nelson A. Rockefeller Center?</q>
 
 The Nelson A. Rockefeller Center is on the edge of Hinman College, near the Lecture Hall and Bartle Library. We will have a sign outside of the entrance to use for the event.
