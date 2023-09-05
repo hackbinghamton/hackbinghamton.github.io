@@ -25,7 +25,7 @@ The event will be at <time datetime="2023-09-11T18:00">September 11th at 6:00PM<
 
 ## About SIG
 
-SIG is a global quantitative trading firm founded by a group of friends who share a passion for game theory and probabilistic thinking. We have incorporated this approach into our culture, where you will find relentless problem solvers within each of our core disciplines: Trading, Technology, and Quantitative Research. From offices around the world, our employees collaborate to make optimal decisions and are driven by the desire to achieve winning results together.
+[SIG](https://sig.com/) is a global quantitative trading firm founded by a group of friends who share a passion for game theory and probabilistic thinking. We have incorporated this approach into our culture, where you will find relentless problem solvers within each of our core disciplines: Trading, Technology, and Quantitative Research. From offices around the world, our employees collaborate to make optimal decisions and are driven by the desire to achieve winning results together.
 
 ## Q & A
 
