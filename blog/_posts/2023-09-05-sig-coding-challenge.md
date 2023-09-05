@@ -48,3 +48,9 @@ Sure! If you are just getting out of class, it's fine if you arrive a little lat
 <q>Where is the Nelson A. Rockefeller Center?</q>
 
 The Nelson A. Rockefeller Center is on the edge of Hinman College, near the Lecture Hall and Bartle Library. We will have a sign outside of the entrance to use for the event.
+
+<div class="note" style="text-align: center; font-size: xx-large">
+	<a href="https://sigsurvey.typeform.com/to/Eonyrya9">
+		Register now!
+	</a>
+</div>
