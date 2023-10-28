@@ -10,68 +10,47 @@ so_list:
     pos: President
     pronouns: She/Her
   - 
-    name: Soren O'Shay
-    email: soshay1@binghamton.edu
-    pos: Executive Vice President
-    pronouns: They/Them
-  -
-    name: Josef Schindler
-    email: jschind1@binghamton.edu
+    name: Jonathan Shin
+    email: jshin75@binghamton.edu
     pos: Vice President of Logistics
     pronouns: He/Him
-  -
+  - 
+    name: Christopher Bingham
+    email: cbingha@binghamton.edu
+    pos: Vice President of Event Planning
+    pronouns: He/Him
+  - 
     name: Julia Maiolo
     email: jmaiolo1@binghamton.edu
     pos: Vice President of Outreach
     pronouns: She/Her
   - 
-    name: Roman Raguso
-    email: rraguso1@binghamton.edu
-    pos: Vice President of Finance
+    name: Nicolas Said
+    email: nsaid1@binghamton.edu
+    pos: Vice President of Outreach
     pronouns: He/Him
-  -
-    name: Jared Eipp
-    email: jeipp1@binghamton.edu
-    pos: Secretary
-    pronouns: He/Him
-
-c_list:
-  -
-    name: Kaitlin Wan
-    email: kwan2@binghamton.edu
-    pos: Hackathon Director
-    pronouns: She/Her
   - 
     name: Roman Raguso
     email: rraguso1@binghamton.edu
-    pos: Social Media Coordinator
+    pos: Vice President of Communications
+    pronouns: He/Him
+  - 
+    name: Connie Deng
+    email: cdeng9@binghamton.edu
+    pos: Secretary of Communications
+    pronouns: She/Her
+
+smt_list:
+  - 
+    name: Joseph Roberts
+    email: jrober60@binghamton.edu
     pronouns: He/Him
 
-o_list:
-  -
-    name: Christopher Bingham
-    pronouns: He/Him
-  -
-    name: Connie Deng
-    pronouns: She/Her
-  -
-    name: Guy Ben-Yishai
-    pronouns: He/Him
-  -
-    name: Jonathan Shin
-    pronouns: He/Him
-  -
-    name: Kaitlin Wan
-    pronouns: She/Her
-  -
-    name: Nicholas Said
-    pronouns: He/Him
-  -
-    name: Theodore Tourneux
-    pronouns: He/Him
-  -
-    name: Timothy Peck
-    pronouns: He/Him
+sw_list:
+  - 
+    name: Rowan Devereux-Smith
+    email: rdevere1@binghamton.edu
+    pronouns: They/Them
 
 ---
 
@@ -87,17 +66,17 @@ o_list:
 			<li>{% include person.html person=so %}</li>
 		{% endfor %}
 	</ul>
-	<h3>Chairs</h3>
+	<h3>Social Media Team</h3>
 	<ul>
-		{% for c in page.c_list %}
+		{% for c in page.smt_list %}
 			<li>{% include person.html person=c %}</li>
 		{% endfor %}
 	</ul>
-	<h3>Organizers</h3>
+	<h3>Software Team</h3>
 	<ul>
-    {% for o in page.o_list %}
-      <li>{% include person.html person=o %}</li>
-    {% endfor %}
+  		{% for o in page.sw_list %}
+     			<li>{% include person.html person=o %}</li>
+   		{% endfor %}
 	</ul>
 
 </div>
