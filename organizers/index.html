@@ -43,14 +43,20 @@ so_list:
 smt_list:
   - 
     name: Joseph Roberts
-    email: jrober60@binghamton.edu
     pronouns: He/Him
 
 sw_list:
   - 
     name: Rowan Devereux-Smith
-    email: rdevere1@binghamton.edu
     pronouns: They/Them
+
+hl_list:
+  - 
+    name: Jared Eipp
+    pronouns: He/Him
+  - 
+    name: Josef Schindler
+    pronouns: He/Him
 
 ---
 
@@ -59,7 +65,6 @@ sw_list:
 	<p>Organizers are the people who help out at workshops and run the hackathon</p>
 </div>
 <div class="article">
-
 	<h3>Senior Organizers</h3>
 	<ul>
 		{% for so in page.so_list %}
@@ -78,5 +83,12 @@ sw_list:
      			<li>{% include person.html person=o %}</li>
    		{% endfor %}
 	</ul>
+	<h3>Hackathon Logistics Team</h3>
+	<ul>
+		{% for o in page.hl_list %}
+			<li>{% include person.html person=o %}</li>
+		{% endfor %}
+	</ul>
+
 
 </div>
