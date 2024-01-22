@@ -22,7 +22,7 @@ If you would like to learn more, please visit [the HackBU 2024 website](https://
       <b>Alumni</b>: If you are interested in coming back as a mentor and/or judge, please fill out <a href="https://forms.gle/7UnZTBSqEMeQEWCZ9">this form</a>!
     </li>
     <li>
-      <b>Companies and Organizations</b>: If you are interested in sponsoring this event, please see our <a href="https://hackbu.org/2024/sponsorship_packet.pdf">sponsorship packet</a>. To discuss it further, please reach out to our outreach team at, <a href="mailto:hello@hackbu.org">Julia Maiolo</a>.
+      <b>Companies and Organizations</b>: If you are interested in sponsoring this event, please see our <a href="https://hackbu.org/2024/sponsorship_packet.pdf">sponsorship packet</a>. To discuss it further, please reach out to our outreach team at <a href="mailto:hello@hackbu.org">hello@hackbu.org</a>.
     </li>
   </ul>
 </div>
