@@ -10,7 +10,7 @@ On behalf of the HackBU team, I am excited to announce that [signups for the Hac
 
 <!--more-->
 
-The hackathon is a 24-hour "innovation marathon" in which you and your team of 1–4 students build a project from the ground up in the language and technology of your choosing. We highly recommend that students of all backgrounds get involved, regardless of skill level! If you feel unconfident programming, we will be hosting workshops that go over programming with Python and presenting ideas with web development.
+The hackathon is a 24-hour "innovation marathon" in which you and your team of 1–4 students build a project from the ground up in the language and technology of your choosing. We highly recommend that students of all backgrounds get involved, regardless of skill level! If you feel unconfident programming, we will be hosting workshops that go over programming with Python and creating websites with HTML and CSS.
 
 Thanks to our sponsors, we will be providing free food and free swag to all of our attendees (this year's swag color is cardinal red!). There will also be many opportunities to network and attend talks from our affiliates.
 
