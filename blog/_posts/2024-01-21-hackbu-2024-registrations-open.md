@@ -6,7 +6,7 @@ author_contact: mailto:kloerke1@binghamton.edu
 tags: hackathon
 ---
 
-On behalf of the HackBU team, I am excited to announce that [signups for the HackBU 2024 hackathon](https://forms.gle/NpJnaMxDfLvCcywb9) are now open! This event will take place on **February 17th–18th, in-person at Binghamton University's Innovative Technology Complex**. Regular registration will close at midnight on February 11th, so register soon!
+On behalf of the HackBU team, I am excited to announce that [signups for the HackBU 2024 hackathon](https://forms.gle/NpJnaMxDfLvCcywb9) are now open! This event will take place on **February 17th–18th, in-person at Binghamton University's Innovative Technology Complex**. Regular registration will close at 11:59PM on February 12th, so register soon!
 
 <!--more-->
 
