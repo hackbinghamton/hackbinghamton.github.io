@@ -24,7 +24,7 @@ The event locations given on that schedule are all rooms within the [Innovative 
 
 Notice how check-in is in a different spot this time. To enter HackBU, you must go through the main entrance of the Engineering & Science building:
 
-![Check-in Picture](/img/blog/checkin_photo.png){: width="80%" }
+![Check-in Picture](/img/blog/checkin_photo.jpg){: width="80%" }
 
 ![Check-in Map](/img/blog/checkin_map.png){: width="80%" }
 
