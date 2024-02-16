@@ -41,7 +41,7 @@ Secondly, we are allocating a $1k+ travel fund for anyone who needs to use Uber 
 The [Devpost](https://hackbu2024.devpost.com/) is now up! The theme for the hackathon is "Hack Tomorrow", and we have the following prize categories:
 
 - #1/#2/#3 Best Hack: Overall best project.
-- Best Technical Hack: Best project from the perspective of being technically elaborate and impressive.
+- Best Technical Hack: Best project from the perspective of being technically impressive.
 - Best Newbie Hack: Best project made by a team where at least half of the members have not done a hackathon before.
 - Best Harpur Hack: Best project made by a team where at least half of the members are Harpur students (not including dual-degree students in Watson, sorry!).
 
