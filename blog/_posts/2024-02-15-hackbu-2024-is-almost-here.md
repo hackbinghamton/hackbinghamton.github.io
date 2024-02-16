@@ -12,7 +12,7 @@ Hi all! HackBU 2024 is on Saturday, so let's talk details about the event :)
 
 ## Late Registration
 
-Regular Registration ended earlier this week, but we are still happy to take [late registrations](https://forms.gle/s3Bi82F8LgXc1fj86)! We will also be able to accomodate walk-on registrations. If you're on the fence, I highly recommend registering - it doesn't hurt to save a seat, and showing up to the hackathon will be well worth your time :)
+Regular Registration ended earlier this week, but we are still happy to take [late registrations](https://forms.gle/s3Bi82F8LgXc1fj86)! We will also be able to accomodate walk-on registrations. If you're on the fence, I highly recommend registering - it doesn't hurt to save a seat, and showing up to the hackathon will be well worth your time.
 
 ## Schedule and Location
 
