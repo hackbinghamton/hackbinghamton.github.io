@@ -32,7 +32,7 @@ Notice how check-in is in a different spot this time. To enter HackBU, you must 
 
 I'll cut to the chase: no OCCT shuttle this year. But, don't worry! We are doing everything we can to make sure that you have options to get to the hackathon.
 
-Firstly, we will be having a couple of walking groups that start in the lobby of the University Union, and end at the ITC. It's a [20 minute walk through campus](https://maps.app.goo.gl/Eu9ZBKTst54WMidJ7), but it goes by quickly. And, remember, this used to be the only way to get to HackBU without a car :^)
+Firstly, we will be having a walking group at 11:00AM and 11:30AM on Saturday that start in the lobby of the University Union, and end at the ITC. It's a [20 minute walk through campus](https://maps.app.goo.gl/Eu9ZBKTst54WMidJ7), but it goes by quickly. And, remember, this used to be the only way to get to HackBU without a car :^)
 
 Secondly, we are allocating a $1k+ travel fund for anyone who needs to use Uber or Lyft to get to the event. You can check out [our reimbursement form](https://forms.gle/4SnRseHa3J9Htq5t7) to see the terms!
 
