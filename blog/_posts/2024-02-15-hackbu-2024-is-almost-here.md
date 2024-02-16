@@ -6,7 +6,7 @@ author_contact: mailto:hello@hackbu.org
 tags: hackathon
 ---
 
-Hi all! HackBU 2024 is on Saturday, so let's talk details about the event :)
+Hi all! [HackBU 2024](https://hackbu.org/2024/) is on Saturday, so let's talk details about the event :)
 
 <!--more-->
 
