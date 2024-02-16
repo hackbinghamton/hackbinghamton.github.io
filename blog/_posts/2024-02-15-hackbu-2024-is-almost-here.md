@@ -18,7 +18,7 @@ Regular Registration ended earlier this week, but we are still happy to take [la
 
 The schedule for the hackathon has been published at [https://hackbu.org/2024/schedule](https://hackbu.org/2024/schedule). Any last-minute changes (i.e. due to delays on the day-of) will be published to our [Discord server](/discord). All participants, judges, and sponsors should join the Discord server to stay up-to-date.
 
-The event locations given on that schedule are all rooms within the [Innovative Technology Complex](https://goo.gl/maps/YvZFvfeiAe17bU5x5) (ITC). Here's the map for this year:
+The event locations given on that schedule are all rooms within the [Innovative Technology Complex](https://maps.app.goo.gl/GMq2cioxjg2yRB5r6) (ITC). Here's the map for this year:
 
 ![ITC Map Preview](/img/blog/itc_map.png){: width="100%" }
 
