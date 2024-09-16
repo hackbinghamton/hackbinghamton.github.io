@@ -5,59 +5,39 @@ description: List of current HackBU Organizers
 
 so_list:
   - 
-    name: Lucy Loerker
-    email: lucy@hackbu.org
-    pos: President
-    pronouns: She/Her
-  - 
-    name: Jonathan Shin
-    email: jshin75@binghamton.edu
-    pos: Vice President of Logistics
-    pronouns: He/Him
-  - 
     name: Christopher Bingham
     email: cbingha@binghamton.edu
-    pos: Vice President of Event Planning
-    pronouns: He/Him
+    pos: President
   - 
-    name: Julia Maiolo
-    email: jmaiolo1@binghamton.edu
-    pos: Vice President of Outreach
-    pronouns: She/Her
+    name: Lucy Loerker
+    email: lucy@hackbu.org
+    pos: Senior Advisor
+  - 
+    name: Connie Deng
+    email: cdeng9@binghamton.edu
+    pos: Vice President of Communications
   - 
     name: Nicolas Said
     email: nsaid1@binghamton.edu
     pos: Vice President of Outreach
-    pronouns: He/Him
-  - 
-    name: Roman Raguso
-    email: rraguso1@binghamton.edu
-    pos: Vice President of Communications
-    pronouns: He/Him
-  - 
-    name: Connie Deng
-    email: cdeng9@binghamton.edu
-    pos: Secretary
-    pronouns: She/Her
-
-smt_list:
-  - 
-    name: Joseph Roberts
-    pronouns: He/Him
-
-sw_list:
-  - 
+  -
     name: Rowan Devereux-Smith
-    pronouns: They/Them
+    email: rdevere1@binghamton.edu
+    pos: Vice President of Software
+  -
+    name: Luciano Pomara
+    email: lpomara1@binghamton.edu
+    pos: Vice President of Logistics
 
-hl_list:
-  - 
-    name: Jared Eipp
-    pronouns: He/Him
-  - 
-    name: Josef Schindler
-    pronouns: He/Him
-
+org_list:
+  -
+    name: Matthew Ham
+  -
+    name: Bhavi Patel
+  -
+    name: Benjamin Panamdanam
+  -
+    name: Joseph Roberts
 ---
 
 <div class="article article-introduction">
@@ -71,24 +51,10 @@ hl_list:
 			<li>{% include person.html person=so %}</li>
 		{% endfor %}
 	</ul>
-	<h3>Social Media Team</h3>
+	<h3>Organizers</h3>
 	<ul>
-		{% for c in page.smt_list %}
+		{% for c in page.org_list %}
 			<li>{% include person.html person=c %}</li>
 		{% endfor %}
 	</ul>
-	<h3>Software Team</h3>
-	<ul>
-  		{% for o in page.sw_list %}
-     			<li>{% include person.html person=o %}</li>
-   		{% endfor %}
-	</ul>
-	<h3>Hackathon Logistics Team</h3>
-	<ul>
-		{% for o in page.hl_list %}
-			<li>{% include person.html person=o %}</li>
-		{% endfor %}
-	</ul>
-
-
 </div>
