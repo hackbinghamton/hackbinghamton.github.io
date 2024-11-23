@@ -1,7 +1,116 @@
 ---
 title: Photos
 layout: default
-redirect_to: /photos/hackbu2023
 ---
 
-<!-- Maybe eventually we'll have multiple galleries to link to ;) -->
+<style>
+.album_card {
+    /* Make this anchor into a card. */
+    display: block;
+
+    padding: 1.5em;
+    border-radius: 1em;
+
+    background-image: linear-gradient(
+        var(--accent-color),
+        var(--accent-color)),
+        var(--bg-img);
+    background-size: cover;
+    background-position: center;
+    box-shadow: 2.4px 4.8px 4.8px hsl(0deg 0% 0% / 0.43);
+
+    /*
+     * We can only pick one color for both the header and the subtitle.
+     * Prefer purple under black rather than black under purple.
+     */
+    text-decoration-color: var(--text-color) !important;
+
+    /*
+     * Since this is an anchor, the UA assigns this anchor styling.
+     * However, we have text in here that we want normal styling for,
+     * so make sure that the normal properties get passed through.
+     */
+    color: inherit;
+    text-decoration: inherit;
+    /*
+     * `!important` is necessary to offset `.container a`, since
+     * we are technically in a container.
+     */
+    font-weight: inherit !important;
+}
+
+.album_card:hover {
+    text-decoration: underline;
+}
+
+.album_card h2 {
+    margin-block: 0;
+
+    color: var(--text-color);
+    font-size: 2.5em;
+}
+
+.album_card p {
+    margin-block: 0;
+}
+
+@media (min-width: 640px) {
+    .album_card {
+        padding: 1.5em;
+
+        background-image: linear-gradient(to right,
+            var(--accent-color) 50%,
+            rgb(0 0 0 / 0)),
+            var(--bg-img);
+    }
+    .album_card h2 {
+        font-size: 3em;
+    }
+}
+
+.y2023 {
+    --text-color: hsl(304 50% 39%);
+    --accent-color: hsl(249 100% 86% / 0.9);
+    --bg-img: url("/img/hackathon/2023/20230205_140800.jpg")
+}
+
+.y2024 {
+    --text-color: hsl(304 50% 39%);
+    --accent-color: hsla(8, 100%, 50%, 0.9);
+    --bg-img: url("/img/hackathon/2023/20230205_140800.jpg")
+}
+</style>
+
+<h1>
+	<i class="fa fa-align-left"></i>
+	Photos
+</h1>
+
+<article>
+    <a class="album_card y2023" href="/photos/hackbu2023">
+        <h2>
+            HackBU 2023
+        </h2>
+        <i>
+            <time datetime="2024-02-04">February 4th-5th, 2023</time>
+        </i>
+        <p>
+            Photos from our tenth annual hackathon.
+        </p>
+    </a>
+</article>
+
+<article>
+    <a class="album_card y2024" href="/photos/hackbu2024">
+        <h2>
+            HackBU 2024
+        </h2>
+        <i>
+            <time datetime="2024-02-04">February 17th-18th, 2023</time>
+        </i>
+        <p>
+            Photos from our eleventh annual hackathon.
+        </p>
+    </a>
+</article>
+
