@@ -4,6 +4,16 @@ A student-run organization at Binghamton University created to foster a communit
 
 ## Install
 
+The best way to run the HackBU website locally is to use a container provider like `podman` or `docker`. This allows you to isolate the necessary tools from your host system, preventing dependency conflicts and guaranteeing reproducibility across installations.
+1. Install your choice of provider, as well as `podman-compose` or `docker-compose`.
+2. Clone the project directory
+3. Navigate to the project directory and run `podman compose up -d`. This will build and start the container.
+4. In a browser, go to 127.0.0.1:4000 to interact with the site. Changes to the project directory will be reflected in the site.
+5. Run `podman compose down` in the project directory to stop the local server.
+
+If you change the Gemfile or Gemfile.lock, run `podman compose up -d --build --force-recreate` to regenerate the container image.
+
+### Manual install
 In addition to cloning the HackBU repository, you'll need a few things to run HackBU locally:
 
 1. Install the necessary dependencies to build Ruby: https://github.com/rbenv/ruby-build/wiki#suggested-build-environment.
@@ -18,7 +28,7 @@ In addition to cloning the HackBU repository, you'll need a few things to run Ha
 
 3. **Bundler** - Ruby's package manager. Comes preinstalled with Ruby as `bundle`.
 
-4. **Jekyll** - Run the command `bundle install` in the project directory to download and install Jekyll. (~~Try using `sudo bundle install` if you run into problems.~~ <-- do NOT do this!!! you will litter your system with files, if it even lets you)
+4. **Jekyll** - Run the command `bundle install` in the project directory to download and install Jekyll. (Do not run this command as root, even if you have permissions issues)
 
 You can start the Jekyll server with `bundle exec jekyll serve --watch`. See the [Jekyll documentation ](http://jekyllrb.com/docs/home/) for more information.
 
