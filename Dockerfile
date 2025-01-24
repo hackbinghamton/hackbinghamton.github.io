@@ -1,4 +1,4 @@
-FROM docker.io/library/ruby:latest
+FROM docker.io/library/ruby:3.3
 COPY Gemfile /home/Gemfile
 WORKDIR /home
 RUN bundle install

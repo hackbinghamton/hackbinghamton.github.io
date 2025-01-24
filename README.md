@@ -11,7 +11,7 @@ The best way to run the HackBU website locally is to use a container provider li
 4. In a browser, go to 127.0.0.1:4000 to interact with the site. Changes to the project directory will be reflected in the site.
 5. Run `podman compose down` in the project directory to stop the local server.
 
-If you change the Gemfile or Gemfile.lock, run `podman compose up -d --build --force-recreate` to regenerate the container image.
+If you change the Gemfile or Gemfile.lock, find the name of the local image in `podman image ls` and delete it with `podman image rm image-name` before starting compose again.
 
 ### Manual install
 In addition to cloning the HackBU repository, you'll need a few things to run HackBU locally:

@@ -1,10 +1,7 @@
 services:
   hackbu:
-    image: hackbu
     build:
       context: .
-      containerfile: Containerfile
-      network: host
     volumes:
       - .:/hackbu:Z
     network_mode: host
