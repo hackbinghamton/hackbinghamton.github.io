@@ -1,0 +1,9 @@
+services:
+  hackbu:
+    build:
+      context: .
+    volumes:
+      - .:/hackbu:Z
+    network_mode: host
+
+
