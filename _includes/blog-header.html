@@ -20,7 +20,15 @@
 
 <div class="byline">
 	<address>
+	{% if include.post.author %}
 		Written by <a rel="author" href="{{ include.post.author_contact }}">{{ include.post.author }}</a>
+	{% else %}
+		Written by 
+		{% for author in include.post.authors %}
+			{% if forloop.last %}and {% endif %}
+			<a rel="author" href="{{ author[1] }}">{{ author[0] }}</a>{% if forloop.length == 2 or forloop.last %} {% else %}, {% endif %}
+		{% endfor %}
+	{% endif %}
 	</address>
 	<p style="margin-top: 0;">
 		<i>Published <time datetime="{{ include.post.date | date: '%Y-%m-%d'}}"">on {{ include.post.date | date: "%B %d, %Y" }}</time></i>
