@@ -1,8 +1,8 @@
 ---
 title: HackBU 2023 is under a week away!
 layout: "blog-post"
-author: Lucy Loerker
-author_contact: mailto:lucy@hackbu.org
+authors:
+    Lucy Loerker: "mailto:lucy@hackbu.org"
 tags: hackathon
 ---
 

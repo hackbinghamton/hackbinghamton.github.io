@@ -1,8 +1,8 @@
 ---
 title: HackBU 2023 registrations are now open!
 layout: "blog-post"
-author: Lucy Loerker
-author_contact: mailto:lucy@hackbu.org
+authors:
+    Lucy Loerker: "mailto:lucy@hackbu.org"
 tags: hackathon
 # i messed up the filename lol
 redirect_from:

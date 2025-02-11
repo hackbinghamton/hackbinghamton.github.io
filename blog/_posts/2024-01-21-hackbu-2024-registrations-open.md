@@ -1,8 +1,8 @@
 ---
 title: HackBU 2024 registrations are now open!
 layout: "blog-post"
-author: Lucy Loerker
-author_contact: mailto:kloerke1@binghamton.edu
+authors:
+    Lucy Loerker: "mailto:lucy@hackbu.org"
 tags: hackathon
 ---
 
