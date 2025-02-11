@@ -1,8 +1,8 @@
 ---
 title: HackBU 2024 is almost here!
 layout: "blog-post"
-author: Lucy Loerker
-author_contact: mailto:hello@hackbu.org
+authors:
+    Lucy Loerker: "mailto:lucy@hackbu.org"
 tags: hackathon
 ---
 

@@ -1,8 +1,8 @@
 ---
 title: "Announcing the SIG Coding Challenge"
 layout: "blog-post"
-author: Lucy Loerker
-author_contact: mailto:kloerke1@binghamton.edu
+authors:
+    Lucy Loerker: "mailto:lucy@hackbu.org"
 ---
 
 Hi all! I am excited to announce that HackBU is partnering with [Susquehanna International Group](https://sig.com/) and [Binghamton ACM](https://binghamtonacm.org/) to host a coding competition with free food and cash prizes. This exciting event will be taking place this <time datetime="2023-09-11T18:00">September 11th at 6:00PM</time> in Room 155 of the [Nelson A. Rockefeller Center](https://goo.gl/maps/yLjXZVgQBWipdWcF9).
