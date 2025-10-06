@@ -1,0 +1,27 @@
+---
+title: Quickhacks - HackBU
+layout: default
+description: Participate in our tri-weekly 'Quickhacks' event, or learn more about them.
+---
+
+<div class="article article-introduction">
+	<h2><i class="fa fa-globe"></i>Quickhacks</h2>
+	<p>Quickhacks is a tri-weekly event where blah blah idk rn. Bunch of content here Bunch of content here Bunch of content here Bunch of content here Bunch of content here Bunch of content here Bunch of content here Bunch of content here Bunch of content here Bunch of content here Bunch of content here Bunch of content here Bunch of content here Bunch of content here Bunch of content here Bunch of content here Bunch of content here Bunch of content here Bunch of content here Bunch of content here Bunch of content here Bunch of content here Bunch of content here Bunch of content here Bunch of content here Bunch of content here Bunch of content here Bunch of content here Bunch of content here Bunch of content here Bunch of content here Bunch of content here Bunch of content here Bunch of content here Bunch of content here Bunch of content here Bunch of content here Bunch of content here Bunch of content here Bunch of content here Bunch of content here Bunch of content here Bunch of content here Bunch of content here Bunch of content here Bunch of content here Bunch of content here Bunch of content here Bunch of content here </p>
+    <h2>Here's our most recent winners:</h2>
+</div>
+<div class="article">
+	{% assign page = site.categories.quickhacks | first %}
+	{{ page.content }}
+</div>
+<h2>All Quickhacks Results:</h2>
+
+<div class="article">
+	<ul>
+	{% assign all = site.categories.quickhacks | offset: 1 %}
+	{% for event in all %}
+		<li>
+			<a href="{{ event.url }}">{{ event.title }}</a> - {{ event.date | date: "%B %d, %Y" }}
+		</li>
+	{% endfor %}
+	</ul>
+</div>
