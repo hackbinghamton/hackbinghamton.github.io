@@ -1,0 +1,56 @@
+---
+title: "Quickhacks I Results"
+layout: blog-post
+date: 2025-09-09
+description: "Results from Quickhacks I"
+# can we fetch stuff idk im react pilled
+winners:
+    - project_name: "Todo App"
+      author: "John Doe"
+      description: "A simple todo application built with React and Node.js..."
+      video_url: "https://www.youtube.com/embed/ScMzIvxBSi4"
+      github_url: "https://github.com/johndoe/todo-app"
+    - project_name: "Weather Dashboard"
+      author: "Jane Smith"
+      description: "Real-time weather dashboard something something..."
+      video_url: "https://www.youtube.com/embed/ScMzIvxBSi4"
+      github_url: "https://github.com/janesmith/weather-dashboard"
+---
+
+<div class="article article-introduction">
+	<h2><i class="fa fa-trophy"></i>Quickhacks I</h2>
+	<p>Hi hackers! We're glad to announce that the judging/voting period has concluded!</p>
+</div>
+
+<div class="article">
+    <h2>Winners</h2>
+	{% for submission in page.winners %}
+		<div class="submission">
+            <h3>{{ submission.author }} — {{ submission.project_name }}</h3>
+			
+			{% if submission.video_url %}
+				<iframe 
+					src="{{ submission.video_url }}" 
+					width="100%" 
+					height="315" 
+					frameborder="0" 
+					allowfullscreen>
+				</iframe>
+			{% endif %}
+			
+			<p>{{ submission.description }}</p>
+			
+			{% if submission.github_url %}
+				<p><a href="{{ submission.github_url }}" target="_blank"><i class="fa fa-github"></i> View Code</a></p>
+			{% endif %}
+			
+			<hr>
+		</div>
+	{% endfor %}
+
+    <h2>Comments</h2>
+    <p>We especially liked the Todo app for being very cool! It was super cool. We also liked the other one.</p>
+
+    <h2>Thanks to all those who submitted their projects:</h2>
+    Other submissions here..
+</div>
