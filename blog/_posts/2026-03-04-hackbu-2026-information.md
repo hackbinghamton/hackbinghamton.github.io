@@ -18,6 +18,7 @@ As of today, HackBU 2026 is only three days away! Here we're going to talk about
 The hackathon will take place in the Innovative Technologies Complex (ITC), a short walk away from the main campus. If you aren't comfortable walking, we highly recommend carpooling if possible. Otherwise, we will have two walking groups from the Union at 11am and 11:30am Saturday, March 7th.
 
 There are two viable routes:
+
 ![Map to the ITC](/img/blog/finding_itc.png){: width="50%" }\
 (Image courtesy Google Maps)
 
