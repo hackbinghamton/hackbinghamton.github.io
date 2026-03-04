@@ -1,12 +1,12 @@
 ---
-title: HackBU 2025 Information
+title: HackBU 2026 Information
 layout: "blog-post"
 authors:
     Rowan Devereux-Smith: "mailto:rdevere1@binghamton.edu"
 tags: hackathon
 ---
 
-As of today, HackBU 2026 is only four days away! Here we're going to talk about a few important things:
+As of today, HackBU 2026 is only three days away! Here we're going to talk about a few important things:
 - How to get to the hackathon
 - Schedule of events and meals
 - How to submit your project
