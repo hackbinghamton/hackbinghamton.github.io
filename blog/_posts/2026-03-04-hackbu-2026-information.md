@@ -47,7 +47,7 @@ We will detail the full schedule during the opening ceremony, but here are the i
 	- A catered lunch will be available. You will be called up by the color of your wristband.
 - 5pm:
 	- Jack Fischer will provide a talk in the Symposium Hall: Startups and Building Your Own Adventure.
-- 6pm:
+- 7pm (approximate):
 	- A catered dinner will be provided. You will be called up by the color of your wristband.
 
 ## Sunday, March 8th
